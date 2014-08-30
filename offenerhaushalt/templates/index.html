@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block title %}
-  Haushalte von Bund, Ländern und Kommunen
+  Proračuni gradova, općina i županija
 {% endblock %}
 
 {% block content %}
@@ -11,12 +11,12 @@
 			<div class="row welcome">
 				<div class="col-xs-12 col-md-7">
 					<p class="claim">
-						OffenerHaushalt stellt die Ausgaben und Einnahmen von Bund, Ländern und Kommunen übersichtlich dar.
+						Otvoreni proračun je detaljan pregled prihoda i rashoda gradova, općina i županija Republike Hrvatske.
 					</p>
 					<div id="default-welcome">
 						<p>
-							Wir schaffen einen einfachen Zugang zu öffentlichen Haushalten, damit interessiere Bürger sich einen Überblick über die Finanzen in ihrer <a href="#kommunen">Stadt</a>,
-							ihrem <a href="#laender">Bundesland</a> oder der <a href="/haushalt/bund/">Bundesrepublik</a> machen können.
+							Pružamo jednostavan pristup upravi pa sada građani zainteresirani u prihode i rashode  
+							<a href="#laender">gradova i općina</a>, <a href="#kommunen">županija</a> i <a href="/haushalt/bund/">države</a> imaju ukupni pregled financija.
 						</p>
 					</div>
 					<div id="listing"></div>
@@ -33,8 +33,8 @@
 	<script id="listing-template" type="text/x-handlebars-template">{% raw %}
 		{{#if has_sites}}
 			<p>
-				In <strong>{{state.name}}</strong> haben wir bislang die folgenden Haushalte
-				erschlossen:</p>
+				U <strong>{{state.name}}</strong> do sada smo kreirali sljedeće proračune:
+				</p>
 			<ul>
 				{{#each sites}}
 					<li><strong><a href="/haushalt/{{slug}}">{{name}}</a></strong>: {{tagline}}</li>
@@ -43,30 +43,28 @@
 		{{/if}}
 		{{#if no_sites}}
 			<p>
-				Für <strong>{{state.name}}</strong> steht bislang kein Haushalt
-				zur Verfügung.
+				Za <strong>{{state.name}}</strong> trenutno još nema kreiranih otvorenih proračuna.
 			</p>
 		{{/if}}
 		<p>
-			<strong>Ist ihre Kommune oder ihr Bundesland nicht verfügbar?</strong> 
-			<a href="/page/mitmachen.html">Machen Sie mit</a>, und erschließen Sie
-			weitere Haushaltsdaten für OffenerHaushalt.
+			<strong>Nedostaje vaša zajednica na popisu?</strong> 
+			<a href="/page/mitmachen.html">Pridružite nam se</a>, i otvorite proračune za
+			još transparentniju potrošnju.
 		</p>
 	{% endraw %}</script>
 
-
-	<hr><a name="kommunen">&nbsp;</a>
+	
+	<hr><a name="laender">&nbsp;</a>
 	<div class="row dataset-listing">
 		<div class="col-xs-12 col-md-4">
-			<h2>Länderhaushalte</h2>
+			<h2>Jedinice lokalne samouprave</h2>
 			<p>
-				Die Haushalte der Länder umfassen Ausgaben für 
-				Dienste wie Polizei und Bildung.
+				Proračuni gradova i općina.
 			</p>
 		</div>
 		<div class="col-xs-12 col-md-8">
 			<div class="row">
-			{% for site in state_sites %}
+			{% for site in local_sites %}
 				<div class="col-xs-12 col-md-6">
 					<h3><a href="{{url_for('site', slug=site.slug)}}">{{site.name}}</a></h3>
 					<p>{{site.tagline}}</p>
@@ -76,17 +74,18 @@
 		</div>
 	</div>
 	
-	<hr><a name="laender">&nbsp;</a>
+	
+	<hr><a name="kommunen">&nbsp;</a>
 	<div class="row dataset-listing">
 		<div class="col-xs-12 col-md-4">
-			<h2>Kommunalhauhsalte</h2>
+			<h2>Županije</h2>
 			<p>
-				Haushalte von Bezirken, Kommunen und Kreisen.
+				Proračuni područnih samouprava.
 			</p>
 		</div>
 		<div class="col-xs-12 col-md-8">
 			<div class="row">
-			{% for site in local_sites %}
+			{% for site in state_sites %}
 				<div class="col-xs-12 col-md-6">
 					<h3><a href="{{url_for('site', slug=site.slug)}}">{{site.name}}</a></h3>
 					<p>{{site.tagline}}</p>
