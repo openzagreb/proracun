@@ -1,0 +1,29 @@
+name: Stadt Bonn
+slug: bonn
+tagline: "Haushaltsplan 2013/2014 der Stadt Bonn."
+source: OpenData Bonn
+source_url: http://opendata.bonn.de/
+data_url: http://opendatalabs.org/misc/Plan_Haushalt_2013_2014-4-xlsx.csv
+state: NW
+level: kommune
+dataset: de-bonn    # openspending dataset name e.g. https://openspending.org/de-bonn
+default: produkte   # frontend title of visualization, is not related with openspending visualizations
+
+filters:
+  - field: 'time.year' # TIME dimension on openspending https://openspending.org/de-bonn/time
+    name: 'Jahr'       # frontend name, not related to openspending
+    default: 2013      # by default display year YYYY
+  - field: 'typ'       # TYP dimension (type: expenditure, revenue) https://openspending.org/de-bonn/typ
+    name: 'Art'        # frontend name, not related to openspending
+    default: 'Aufwand' # by default display "this" 
+  - field: 'vilv'      # some additional dimension https://openspending.org/de-bonn/vilv
+    name: 'Verrechnung'# frontend name, not related to openspending
+    default: 'ohne sekundäre VILV'# by default display "this" 
+    nullable: true     # allow to display "All"
+
+hierarchies:
+    produkte:
+        name: Produkte
+        drilldowns:
+            - produktbereich # level 1 https://openspending.org/de-bonn/produktbereich
+            - produktgruppe  # level 2 https://openspending.org/de-bonn/produktgruppe
