@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Proračuni gradova, općina i županija
+{% endblock %}
+
+{% block content %}
+	<div class="row">
+		<div class="col-xs-12">
+			<!--img src="/static/img/schaeuble.png" class="img-responsive home-image" style="position: absolute;"-->
+			<div class="row welcome">
+				<div class="col-xs-12 col-md-7">
+					<p class="claim">
+						Otvoreni proračun je transparentan pregled prihoda i rashoda gradova, općina i županija Republike Hrvatske.
+					</p>
+					<div id="default-welcome">
+						<p>
+							Pružamo jednostavan i transparentan pristup upravi pa sada zainteresirana javnost ima ukupni pregled financija u prihode i rashode  
+							<a href="#gradoviopcine">gradova i općina</a>, <a href="#zupanije">županija</a> i <a href="/hrvatska/">države</a>.
+						</p>
+					</div>
+					<div id="listing"></div>
+				</div>
+				<div class="col-xs-12 col-md-5">
+					<div id="map"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	
+
+	<script id="listing-template" type="text/x-handlebars-template">{% raw %}
+		{{#if has_sites}}
+			<p>
+				U <strong>{{state.name}}</strong> trenutno imamo sljedeće otvorene 
+				proračune:</p>
+			<ul>
+				{{#each sites}}
+					<li><strong><a href="/{{slug}}">{{name}}</a></strong>: {{tagline}}</li>
+				{{/each}}
+			</ul>
+		{{/if}}
+		{{#if no_sites}}
+			<p>
+				Za <strong>{{state.name}}</strong> još ne postoji otvoren proračun.
+			</p>
+		{{/if}}
+		<p>
+			<strong>Je li proračun samouprava u ovoj županiji dostupan otvoreno?</strong> 
+			<a href="/page/sudjeluj.html">Pridružite nam se</a>, i otvorimo zajedno 
+			još više proračuna javnih vlasti.
+		</p>
+	{% endraw %}</script>
+
+	<hr><a name="zupanije">&nbsp;</a>
+	<div class="row dataset-listing">
+		<div class="col-xs-12 col-md-4">
+			<h2>Jedinice područne samouprave</h2>
+			<p>
+				Županijski proračuni.
+			</p>
+		</div>
+		<div class="col-xs-12 col-md-8">
+			<div class="row">
+			{% for site in state_sites %}
+				<div class="col-xs-12 col-md-6">
+					<h3><a href="{{url_for('site', slug=site.slug)}}">{{site.name}}</a></h3>
+					<p>{{site.tagline}}</p>
+				</div>
+			{% endfor %}
+			</div>
+		</div>
+	</div>
+	
+	<hr><a name="gradoviopcine">&nbsp;</a>
+	<div class="row dataset-listing">
+		<div class="col-xs-12 col-md-4">
+			<h2>Jedinice lokalne samouprave</h2>
+			<p>
+				Lokalni proračuni gradova i općina.
+			</p>
+		</div>
+		<div class="col-xs-12 col-md-8">
+			<div class="row">
+			{% for site in local_sites %}
+				<div class="col-xs-12 col-md-6">
+					<h3><a href="{{url_for('site', slug=site.slug)}}">{{site.name}}</a></h3>
+					<p>{{site.tagline}}</p>
+				</div>
+			{% endfor %}
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block js %}
+	<script id="sites-data" type="application/json">{{sites_json | safe }}</script>
+    {% assets filters="uglifyjs", output="gen/home.%(version)s.js",
+        "js/home.js" %}
+      <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+	{% endassets %}
+{% endblock %}
+

@@ -1,0 +1,28 @@
+name: Primorsko-goranska
+slug: primorsko-goranska
+tagline: "Proračun Primorsko-goranske županije od 2002. do 2010. godine"
+source: Ministarstvo financija
+source_url: http://www.mfin.hr/
+data_url: http://www.mfin.hr/hr/lokalni-proracun-arhiva
+state: Primorsko-goranska
+level: zupanija
+dataset: hr-local
+cuts:
+    lokacija: 'Primorsko-goranska'
+default: rasf
+
+filters:
+  - field: 'time.year'
+    name: 'Godina'
+    default: 2010
+  - field: 'vrsta'
+    name: 'Vrsta'
+    default: 'rashod'
+
+hierarchies:
+    rasf:
+        name: RASF
+        drilldowns:
+            - razred
+            - skupina
+            - podskupina

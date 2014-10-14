@@ -1,16 +1,16 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='offenerhaushalt',
+    name='otvoreniproracun',
     version='2.0',
-    description="Visualisierte Haushalte der BRD",
+    description="Vizualizacija lokalnih hrvatskih proracuna",
     long_description='',
     classifiers=[
         ],
     keywords='',
-    author='Open Knowledge Foundation Deutschland',
-    author_email='info@offenerhaushalt.de',
-    url='http://www.offenerhaushalt.de',
+    author='Open Zagreb',
+    author_email='info@proracun.org',
+    url='http://www.proracun.org',
     license='MIT',
     packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
     namespace_packages=[],

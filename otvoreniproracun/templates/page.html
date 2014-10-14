@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  {{page['title']}}
+{% endblock %}
+
+{% block content %}
+
+	<div class="col-xs-12 pages">
+		<h1 class="page-header">{{page['title']}}</h1>
+
+		{% if framed %}
+		<div class="row">
+		    <div class="col-xs-12 col-sm-8 textual">
+		      {{ page.html | safe }}
+		    </div>
+		    <div class="col-xs-12 col-sm-4">
+		      <ul class="nav nav-list">
+		        <li><a href="/page/intro.html">O projektu</a></li>
+		        <li><a href="/page/faq.html">Učestala pitanja</a></li>
+		        <li><a href="/page/sudjeluj.html">Sudjelujte</a></li>
+		        <li><a href="/page/links.html">Resursi</a></li>
+		        <li><a href="/page/kontakt.html">Kontaktirajte nas</a></li>
+		      </ul>
+		    </div>
+		</div>
+		{% else %}
+			{{ page.html | safe }}
+		{% endif %}
+	</div>
+{% endblock %}
+
+
+

@@ -1,0 +1,31 @@
+name: Velika Gorica
+slug: velika_gorica
+tagline: "Proračun grada Velika Gorica od 2002. do 2010. godine"
+source: Ministarstvo financija
+source_url: http://www.mfin.hr/
+data_url: http://www.mfin.hr/hr/lokalni-proracun-arhiva
+state: Zagrebačka
+level: grad
+location:
+  latitude: 45.6986783
+  longitude: 16.0668461
+dataset: hr-local
+cuts:
+    lokacija: 'Velika Gorica'
+default: rasf
+
+filters:
+  - field: 'time.year'
+    name: 'Godina'
+    default: 2010
+  - field: 'vrsta'
+    name: 'Vrsta'
+    default: 'rashod'
+
+hierarchies:
+    rasf:
+        name: RASF
+        drilldowns:
+            - razred
+            - skupina
+            - podskupina

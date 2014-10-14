@@ -1,7 +1,7 @@
 {
-  "name": "offenerhaushalt",
+  "name": "otvoreniproracun",
   "version": "2.0.0",
-  "main": "offenerhaushalt/static/style/style.less",
+  "main": "otvoreniproracun/static/style/style.less",
   "ignore": [
     ".jshintrc",
     "**/*.txt"

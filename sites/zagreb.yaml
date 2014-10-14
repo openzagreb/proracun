@@ -1,0 +1,31 @@
+name: Grad Zagreb
+slug: zagreb
+tagline: "Proračun Grada Zagreba od 2002. do 2013. godine"
+source: Ministarstvo financija
+source_url: http://www.mfin.hr/
+data_url: http://www.mfin.hr/hr/lokalni-proracun-arhiva
+state: Grad Zagreb
+level: zupanija
+location:
+  latitude: 45.840196
+  longitude: 15.9643316
+dataset: hr-local
+cuts:
+    lokacija: 'Grad Zagreb'
+default: rasf
+
+filters:
+  - field: 'time.year'
+    name: 'Godina'
+    default: 2013
+  - field: 'vrsta'
+    name: 'Vrsta'
+    default: 'rashod'
+
+hierarchies:
+    rasf:
+        name: RASF
+        drilldowns:
+            - razred
+            - skupina
+            - podskupina
