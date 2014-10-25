@@ -1,0 +1,30 @@
+name: Hrvatska
+slug: hrvatska
+tagline: "Državni proračun Republike Hrvatske za 2013. godinu"
+source: Ministarstvo financija
+source_url: http://www.mfin.hr/
+data_url: http://www.mfin.hr/hr/lokalni-proracun-arhiva
+state: Hrvatska
+level: drzava
+location:
+  latitude: 45.7066035
+  longitude: 16.4003552
+dataset: hr-gov
+cuts:
+    lokacija: 'Hrvatska'
+default: org
+
+filters:
+  - field: 'time.year'
+    name: 'Godina'
+    default: 2013
+  - field: 'vrsta'
+    name: 'Vrsta'
+    default: 'izvršenje'
+
+hierarchies:
+    org:
+        name: Organizacijska klasifikacija
+        drilldowns:
+            - razdjel
+            - glava

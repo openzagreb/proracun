@@ -1,0 +1,31 @@
+name: Sveta Nedelja
+slug: sveta_nedelja
+tagline: "Proračun općine Sveta Nedelja od 2002. do 2010. godine"
+source: Ministarstvo financija
+source_url: http://www.mfin.hr/
+data_url: http://www.mfin.hr/hr/lokalni-proracun-arhiva
+state: Zagrebačka
+level: opcina
+location:
+  latitude: 45.7066035
+  longitude: 16.4003552
+dataset: hr-local
+cuts:
+    lokacija: 'Sveta Nedelja'
+default: rasf
+
+filters:
+  - field: 'time.year'
+    name: 'Godina'
+    default: 2010
+  - field: 'vrsta'
+    name: 'Vrsta'
+    default: 'rashod'
+
+hierarchies:
+    rasf:
+        name: RASF
+        drilldowns:
+            - razred
+            - skupina
+            - podskupina

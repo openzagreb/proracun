@@ -16,13 +16,13 @@ $(function() {
     	.attr("width", width)
     	.attr("height", height);
 
-    d3.json("/static/img/deu.topo.json", showMap);
+    d3.json("/static/img/hrv.topo.json", showMap);
 
-    function showMap(error, de) {
-    	var subunits = topojson.feature(de, de.objects.deu);
+    function showMap(error, hr) {
+    	var subunits = topojson.feature(hr, hr.objects.hrv);
 
 	    var projection = d3.geo.mercator()
-	        .center([10.5, 51.35])
+	        .center([16.5, 44.5])
 	        .scale(2500)
 	        .translate([width / 2, height / 2]);
 
