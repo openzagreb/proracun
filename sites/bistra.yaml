@@ -1,14 +1,17 @@
-name: Primorsko-goranska
-slug: primorsko-goranska
-tagline: "Proračun Primorsko-goranske županije od 2002. do 2010. godine"
+name: Bistra
+slug: bistra
+tagline: "Proračun općine Bistra od 2002. do 2010. godine"
 source: Ministarstvo financija
 source_url: http://www.mfin.hr/
 data_url: http://www.mfin.hr/hr/lokalni-proracun-arhiva
-state: Primorsko-goranska
-level: zupanija
+state: Zagrebačka
+level: opcina
+location:
+  latitude: 45.7066035
+  longitude: 16.4003552
 dataset: hr-local
 cuts:
-    lokacija: 'Primorsko-goranska'
+    lokacija: 'Bistra'
 default: rasf
 
 filters:
