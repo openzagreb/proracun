@@ -1,6 +1,6 @@
 ## Otvoreni proračun
 
-An **Open Spending** project
+*An **Open Spending** project*
 
 This repository will contain the source code of **Otvoreni proračun**, a front-end to OpenSpending with a focus on budgets from different levels of the Croatian government.
 
