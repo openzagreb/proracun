@@ -3,13 +3,13 @@ _id: e9db1030-0141-11e8-86e6-dd2a0f61d6b6
 state: NW
 name: Ahaus
 text: >-
-  Haushaltsentwurf der Stadt Ahaus. 
+  Haushaltsentwurf der Stadt Ahaus.
 
   Der Haushaltsentwurf ist in der Ratssitzung am 13. Dezember 2017 eingebracht
   worden.
 
 
-  Es sind nur ordentliche Erträge und ordentliche Aufwendungen dargestellt. 
+  Es sind nur ordentliche Erträge und ordentliche Aufwendungen dargestellt.
 
   Aufrufbar sind das Ergebnis 2016, die Ansätze für 2017 und 2018 sowie die
   Planungen für 2019, 2020 und 2021.
@@ -17,14 +17,14 @@ text: >-
 
   Quelle für die Daten und weitere Informationen auf ahaus.de:
 
-  https://www.ahaus.de/rathaus/zahlendatenstatistik/finanzen-steuern/haushaltsplaene.html 
+  https://www.ahaus.de/rathaus/zahlendatenstatistik/finanzen-steuern/haushaltsplaene.html
 
   (Haushaltspläne - Rathaus - Stadt Ahaus)
 
 
-  Bürgerinfosystem der Stadt Ahaus: 
+  Bürgerinfosystem der Stadt Ahaus:
 
-  https://secure.ahaus.de/sessionnet/bi/to0040.php?__ksinr=646 
+  https://secure.ahaus.de/sessionnet/bi/to0040.php?__ksinr=646
 
   (Rat 13.12.2017)
 
@@ -35,17 +35,17 @@ text: >-
 level: kommune
 config: |-
   {
-    "datapackage": "dc0213bb72807d3b187a6c20e98589fa:stadtahaus_haushaltsentwurf_ratssitzung_20171213",
+    "datapackage": "6f9de6393bf997134dc1afbb45096b76:01-2002-2010-ostvarenje-funkcijska-v2-bedenica",
     "hierarchies": [
       {
-        "datapackageHierarchy": "administrative_classification",
+        "datapackageHierarchy": "functional_classification,
         "url": "produkt",
         "label": "Produkt"
       },
     ],
     "value": [
       {
-        "field": "Betrag.sum",
+        "field": "Iznos.sum",
         "formatOptions": {
           "symbol": "",
           "decimal": ",",
@@ -55,7 +55,7 @@ config: |-
           "postfix": "€",
           "grouping": 3
         },
-        "label": "Betrag"
+        "label": "Iznos"
       }
     ],
     "scale": [
@@ -77,57 +77,48 @@ config: |-
         "ref": "date_2",
         "type": "integer",
         "default": true,
-        "defaultValue": 2018,
+        "defaultValue": 2002,
         "defaultLabel": "All",
-        "label": "Jahr",
+        "label": "Godina",
         "values": [
           {
-            "value": 2016,
-            "label": 2016
+            "value": 2002,
+            "label": 2002
           },
           {
-            "value": 2017,
-            "label": 2017
+            "value": 2003,
+            "label": 2003
           },
           {
-            "value": 2018,
-            "label": 2018
+            "value": 2004,
+            "label": 2004
           },
           {
-            "value": 2019,
-            "label": 2019
+            "value": 2005,
+            "label": 2005
           },
           {
-            "value": 2020,
-            "label": 2020
+            "value": 2006,
+            "label": 2006
           },
           {
-            "value": 2021,
-            "label": 2021
+            "value": 2007,
+            "label": 2007
+          },
+          {
+            "value": 2008,
+            "label": 2008
+          },
+          {
+            "value": 2009,
+            "label": 2009
+          },
+          {
+            "value": 2010,
+            "label": 2010
           }
         ]
       },
-      "Richtung": {
-        "name": "direction_2.Richtung",
-        "label_ref": "direction_2.Richtung",
-        "ref": "direction_2",
-        "type": "string",
-        "default": true,
-        "defaultValue": "Ord. Aufwendungen",
-        "defaultLabel": "All",
-        "label": "Richtung",
-        "values": [
-          {
-            "value": "Ord. Aufwendungen",
-            "label": "Ord. Aufwendungen"
-          },
-          {
-            "value": "Ord. Erträge",
-            "label": "Ord. Erträge"
-          }
-        ]
-      }
-    },
     "level": "kommune",
     "state": "NW",
     "name": "Ahaus",
@@ -136,13 +127,13 @@ config: |-
 date: '2018-01-24T20:05:24.481Z'
 slug: ahaus
 ---
- Haushaltsentwurf der Stadt Ahaus. 
+ Haushaltsentwurf der Stadt Ahaus.
 
   Der Haushaltsentwurf ist in der Ratssitzung am 13. Dezember 2017 eingebracht
-  worden. Es sind nur ordentliche Erträge und ordentliche Aufwendungen dargestellt. 
+  worden. Es sind nur ordentliche Erträge und ordentliche Aufwendungen dargestellt.
 
   Aufrufbar sind das Ergebnis 2016, die Ansätze für 2017 und 2018 sowie die Planungen für 2019, 2020 und 2021.
-  Quelle für die Daten und weitere Informationen auf [ahaus.de](https://www.ahaus.de/rathaus/zahlendatenstatistik/finanzen-steuern/haushaltsplaene.html) 
-  
+  Quelle für die Daten und weitere Informationen auf [ahaus.de](https://www.ahaus.de/rathaus/zahlendatenstatistik/finanzen-steuern/haushaltsplaene.html)
+
   Zudem das [Bürgerinfosystem](https://secure.ahaus.de/sessionnet/bi/to0040.php?__ksinr=646) der Stadt Ahaus (Rat 13.12.2017).
   Und wie die Daten aus der Haushaltsdatei (PDF) extrahiert wurden auf [thesing.net](https://thesing.net/2018/01/offener-haushalt).
