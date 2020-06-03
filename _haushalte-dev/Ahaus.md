@@ -58,18 +58,6 @@ config: |-
         "label": "Iznos"
       }
     ],
-    "scale": [
-      {
-        "label": "Total",
-        "number": 1,
-        "description": ""
-      },
-      {
-        "label": "pro Einwohner (Hauptwohnsitz am 31.12.2017)",
-        "number": "39574",
-        "description": "pE"
-      }
-    ],
     "filters": {
       "Godina": {
         "name": "date_2.Jahr",
