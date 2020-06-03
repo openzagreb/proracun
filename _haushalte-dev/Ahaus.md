@@ -71,7 +71,7 @@ config: |-
       }
     ],
     "filters": {
-      "Jahr": {
+      "Godina": {
         "name": "date_2.Jahr",
         "label_ref": "date_2.Jahr",
         "ref": "date_2",
@@ -118,6 +118,7 @@ config: |-
             "label": 2010
           }
         ]
+      }
       },
     "level": "kommune",
     "state": "NW",
