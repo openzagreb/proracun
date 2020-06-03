@@ -1,0 +1,17 @@
+budget:
+  allowedFields     : ['config', 'state', 'name', 'level', 'text']
+  branch            : "gh-pages"
+  commitMessage     : "New budget."
+  filename          : "{fields.slug}"
+  format            : "frontmatter"
+  moderation        : true
+  path              : "_haushalte-data/{options.slug}"
+  requiredFields    : ['config', 'state', 'name', 'text']
+  transforms:
+    text            : frontmatterContent
+  generatedFields:
+    slug:
+      type          : "slugify"
+      options:
+        field       :  name
+
