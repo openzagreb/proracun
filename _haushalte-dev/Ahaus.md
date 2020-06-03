@@ -38,7 +38,7 @@ config: |-
     "datapackage": "6f9de6393bf997134dc1afbb45096b76:01-2002-2010-ostvarenje-funkcijska-v2-bedenica",
     "hierarchies": [
       {
-        "datapackageHierarchy": "functional_classification,
+        "datapackageHierarchy": "functional_classification",
         "url": "produkt",
         "label": "Produkt"
       },
