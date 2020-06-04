@@ -1,47 +1,62 @@
 - name: "Zagrebačka županija"
   code:  "01"
 
-- name: "Bayern"
-  code:  "BY"
+- name: "Krapinsko-zagorska županija"
+  code:  "02"
 
-- name: "Berlin"
-  code:  "BE"
+- name: "Sisačko-moslavačka županija"
+  code:  "03"
 
-- name: "Brandenburg"
-  code:  "BB"
+- name: "Karlovačka županija"
+  code:  "04"
 
-- name: "Bremen"
-  code:  "HB"
+- name: "Varaždinska županija"
+  code:  "05"
 
-- name: "Hamburg"
-  code:  "HH"
+- name: "Koprivničko-križevačka županija"
+  code:  "06"
 
-- name: "Hessen"
-  code:  "HE"
+- name: "Bjelovarsko-bilogorska županija"
+  code:  "07"
 
-- name: "Mecklenburg-Vorpommern"
-  code:  "MV"
+- name: "Primorsko-goranska županija"
+  code:  "08"
 
-- name: "Niedersachsen"
-  code:  "NI"
+- name: "Ličko-senjska županija"
+  code:  "09"
 
-- name: "Nordrhein-Westfalen"
-  code:  "NW"
+- name: "Virovitičko-podravska županija"
+  code:  "10"
 
-- name: "Saarland"
-  code:  "SL"
+- name: "Požeško-slavonska županija"
+  code:  "11"
 
-- name: "Sachsen"
-  code: "SN"
+- name: "Brodsko-posavska županija"
+  code: "12"
 
-- name: "Sachsen-Anhalt"
-  code:  "ST"
+- name: "Zadarska županija"
+  code:  "13"
 
-- name: "Schleswig-Holstein"
-  code:  "SH"
+- name: "Osječko-baranjska županija"
+  code:  "14"
 
-- name: "Rheinland-Pfalz"
-  code:  "RP"
+- name: "Šibensko-kninska županija"
+  code:  "15"
 
-- name: "Thüringen"
-  code:  "TH"
+- name: "Vukovarsko-srijemska županija"
+  code:  "16"
+
+- name: "Splitsko-dalmatinska županija"
+  code:  "17"
+
+- name: "Istarska županija"
+  code:  "18"
+
+- name: "Dubrovačko-neretvanska županija"
+  code:  "19"
+
+- name: "Međimurska županija"
+  code:  "20"
+
+- name: "Grad Zagreb"
+  code:  "21"
