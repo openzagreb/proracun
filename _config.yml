@@ -9,9 +9,9 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: OffenerHaushalt
+title: 'Otvoreni proračun'
 
-email: info@okfn.de
+email: openzagreb@codeforcroatia.org
 
 description: ''
 
@@ -19,10 +19,10 @@ description: ''
 baseurl: ''
 
 # the base hostname & protocol for your site, e.g. http://example.com
-url: 'https://offenerhaushalt.de'
+url: 'https://dev.proracun.org'
 
-twitter_username: okfde
-github_username:  okfde
+twitter_username: openzagreb
+github_username:  openzagreb
 
 # Haushalte
 collections:
@@ -31,19 +31,19 @@ collections:
     permalink: /ohaushalt/:name/
   haushalte:
     output: true
-    permalink: /haushalt/:name/
+    permalink: /prikaz/:name/
   haushalte:
     output: true
-    permalink: /haushalt/:path/
+    permalink: /prikaz/:path/
   haushalte-edit:
     output: true
-    permalink: /haushalt/:name/edit
+    permalink: /prikaz/:name/edit
   embed:
     output: true
-    permalink: /haushalt/:name/embed
+    permalink: /prikaz/:name/embed
   embed-full:
     output: true
-    permalink: /haushalt/:name/embed-full
+    permalink: /prikaz/:name/embed-full
 
 
 # Build settings
