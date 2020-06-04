@@ -11,7 +11,27 @@ config: |-
         {
            "datapackageHierarchy":"economic_classification",
            "url":"economic_classification",
-           "label":"economic_classification"
+           "label":"economic_classification",
+           "filters":{
+              "Vrsta":{
+                 "name":"vrsta.vrsta",
+                 "label_ref":"vrsta.vrsta",
+                 "ref":"vrsta",
+                 "default":true,
+                 "defaultValue":"",
+                 "defaultLabel":"ostvarenje",
+                 "label":"Vrsta",
+                 "values":[
+                    {
+                       "value":"",
+                       "label":"All"
+                    },
+                    {
+                       "value":"ostvarenje",
+                       "label":"ostvarenje"
+                    }
+                 ]
+              }
         }
      ],
      "value":[
