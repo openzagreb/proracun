@@ -87,7 +87,7 @@ config: |-
   "state": "01",
   "name": "Bedenica2",
   "text": "n/a"
-  }
+  },
   {
     "datapackage": "6f9de6393bf997134dc1afbb45096b76:01_2002-2010_ostvaranje_proracuna-sve-v2.1-bedenica",
     "hierarchies": [
