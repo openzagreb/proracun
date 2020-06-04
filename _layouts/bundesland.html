@@ -78,9 +78,9 @@ layout: city
     {% endfor %}
     </p>
     {% if land_has_data %}
-    <div onclick="location.href='{{land_url}}';" class="bundesland-box">
+    <div onclick="location.href='{{land_url}}';" class="admindivisiontop-box">
     {% else %}
-    <div class="bundesland-box">
+    <div class="admindivisiontop-box">
     {% endif %}
       <div class="name">
         <h2> {{ page.land }}</h2>
@@ -101,7 +101,7 @@ layout: city
     {% for c in cities %}
     {% if c.config %}
     {% assign cities_size = cities_size | plus: 1 %}
-    <div onclick="location.href='{{c.url}}';" class="bundesland-box">
+    <div onclick="location.href='{{c.url}}';" class="admindivisiontop-box">
       <div class="name">
         <h2>{{ c.name }}</h2>
       </div>

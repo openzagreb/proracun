@@ -29,8 +29,8 @@ script_include: home
             <p>
             <select id="selectState" class="select-state">
               <option value="" disabled selected>Bundesland</option>
-              {% for bundesland in site.data.bundesland %}
-              <option value="{{ bundesland['code'] }}">{{ bundesland['name'] }}</option>
+              {% for admindivisiontop in site.data.admindivisiontop %}
+              <option value="{{ admindivisiontop['code'] }}">{{ admindivisiontop['name'] }}</option>
               {% endfor %}
             </select>
           </div>
@@ -77,7 +77,7 @@ script_include: home
         </div>
       </div>
     </div>
-    <div class="container bundesland-bottom-karte">
+    <div class="container admindivisiontop-bottom-karte">
       <div class="row">
         <div class="col col-xs-12 col-md-12">
           <h1>Der Bundeshaushalt 2017 beträgt 329 Milliarden!</h1>

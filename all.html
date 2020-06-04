@@ -10,7 +10,7 @@ script_include: home
       <div class="row">
         <div class="col-xs-12 col-md-12">
         {% assign landcities = site.haushalte %}
-        {% for bundes in site.data.bundesland %}
+        {% for bundes in site.data.admindivisiontop %}
         <h1>{{ bundes.name }}</h1>
           {% for land in landcities %}
             {% if land.config and land.state == bundes.code %}

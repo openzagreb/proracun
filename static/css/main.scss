@@ -1123,7 +1123,7 @@ h1.page-header.site {
     }
   }
 
-  .bundesland-box {
+  .admindivisiontop-box {
     background-color: #f5f7fa;
     margin-top: 12px;
     padding: 23px;
@@ -1163,7 +1163,7 @@ h1.page-header.site {
 }
 
 @media (min-width: 768px) {
-  .bundesland-box {
+  .admindivisiontop-box {
     display: flex;
 
     .name {
@@ -1327,7 +1327,7 @@ h1.page-header.site {
   }
 }
 
-.bundesland-bottom-karte {
+.admindivisiontop-bottom-karte {
    background-color: #e5f7ff;
    .row {
      .col {
