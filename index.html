@@ -6,8 +6,16 @@ script_include: home
 {% include relative-baseurl.html %}
 
 <div class="main-content">
+  <div class="container message-container">
+    <div class="row welcome">
+      <div class="col-xs-12 col-md-12">
+        <div class="front-message">
+          Pružamo jednostavan i transparentan pristup upravi pa sada zainteresirana javnost ima ukupni pregled financija u prihode i rashode gradova, općina, županija i države.
+        </div>
+      </div>
+    </div>
+  </div>
     <div class="container">
-      Jedinice područne (regionalne) samouprave su županije kao najviša razina administrativne podjele u Rebublici Hrvatskoj, a pod njima se nalaze jedinice lokalne samouprave kao općine i gradovi.
       <div class="row">
         <div class="col-xs-12 col-md-12">
         {% assign landcities = site.haushalte %}
@@ -23,6 +31,23 @@ script_include: home
           {% endfor %}
           <p>
         {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="container admindivisiontop-bottom-karte">
+      <div class="row">
+        <div class="col col-xs-12 col-md-12">
+          <h1>Administrativne jedinice</h1>
+          <p>
+          <div class="treemap-big-preview">
+            <p>
+            Jedinice područne (regionalne) samouprave su županije kao najviša razina administrativne podjele u Rebublici Hrvatskoj, a pod njima se nalaze jedinice lokalne samouprave kao općine i gradovi.
+            </p>
+          <!-- <a class="bluegreen-button" href="/haushalt/bund">
+            pogledaj državni proračun
+          </a> -->
+          </div>
+          </p>
         </div>
       </div>
     </div>
