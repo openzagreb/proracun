@@ -1,5 +1,5 @@
-- name: "Baden-Württemberg"
-  code:  "BW"
+- name: "Zagrebačka županija"
+  code:  "01"
 
 - name: "Bayern"
   code:  "BY"
@@ -45,4 +45,3 @@
 
 - name: "Thüringen"
   code:  "TH"
-
