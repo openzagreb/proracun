@@ -39,8 +39,8 @@ config: |-
   "hierarchies": [
     {
       "datapackageHierarchy": "functional_classification",
-      "url": "functional_classification",
-      "label": "functional_classification"
+      "url": "functional-classification",
+      "label": "Funkcijska klasifikacija"
     }
   ],
   "value": [
