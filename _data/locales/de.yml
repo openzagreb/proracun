@@ -18,7 +18,8 @@ de:
     back: zurück
     missing: Wir haben leider noch keinen Haushalt für
     investigate: "Schauen Sie auf der Webseite von  nach, ob es Haushaltsdaten [city_name] online verfügbar gibt. Oder fragen sie den Datensatz an, entweder…"
-    foia: Oder über FragDenStaat
+    foia:
+      action: Oder über FragDenStaat
       intro: Mit nur zwei Klicks können Sie eine verbindliche Informationsfreiheitsanfrage stellen.
       request_link: zur Anfrage
     contribute:

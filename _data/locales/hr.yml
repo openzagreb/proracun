@@ -18,7 +18,8 @@ de:
     back: povratak
     missing: Nažalost, nemamo proračun za
     investigate: "Provjeri na internetskim stranicama jesu li podaci o proračunu za [naziv grada] objavljeni. Ili zatraži napismeno, bilo…"
-    foia: Putem Imamo pravo znati
+    foia:
+      action: Putem Imamo pravo znati
       intro: U samo dva klika možeš napraviti obvezujući zahtjev za pristup informacija.
       request_link: pošalji zahtjev
     contribute:
