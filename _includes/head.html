@@ -23,4 +23,7 @@
       <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/{{ lang }}{{ default_url }}" />
       {% endif %}
     {% endfor %}
+    {% assign translate = site.data.locales[page.lang][page.lang] %}
+  {% else %}
+    {% assign translate = site.data.locales[site.default_lang][site.default_lang] %}
   {% endif %}
