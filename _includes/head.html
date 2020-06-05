@@ -24,6 +24,4 @@
       {% endif %}
     {% endfor %}
     {% assign translate = site.data.locales[page.lang][page.lang] %}
-  {% else %}
-    {% assign translate = site.data.locales[site.default_lang][site.default_lang] %}
   {% endif %}
