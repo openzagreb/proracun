@@ -46,7 +46,7 @@
     return -1;
   };
 
-  var config = {% include_relative _data/config/{{ page.config.json }}.json %}
+  var config = {% include_absolute '_data/config/{{ page.config.json }}.json' %}
   var embedCode = $('#embed-code')
 
   dpvis.treemap('#treemap-budget', config)
