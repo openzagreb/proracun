@@ -2,6 +2,7 @@
 layout: basic
 ---
 {% include relative-baseurl.html %}
+{% assign translate = site.data.locales[page.lang][page.lang] %}
 
 <div id="page">
   {% unless page.url contains 'embed' %}
