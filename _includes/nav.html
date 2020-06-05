@@ -1,3 +1,9 @@
+{% if page.lang %}
+  {% assign lang = page.lang %}
+{% else %}
+  {% assign lang = site.default_lang %}
+{% endif %}
+
 <div class="navbar-top collapse navbar-collapse navbar-ex1-collapse">
   <div class="top-message">
     {{ site.data.translations['navTopMessage'][lang] }}
