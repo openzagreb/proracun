@@ -1,17 +1,17 @@
 <div class="navbar-top collapse navbar-collapse navbar-ex1-collapse">
   <div class="top-message">
-    Wir sind unabhängig, nicht gewinnorientiert und arbeiten viel ehrenamtlich.
+    {{ translate.nav.top.message }}
   </div>
   <ul class="nav navbar-nav">
     <li>
-      <a href="https://twitter.com/offenerhaushalt"><img style="width: 22px" src="/static/img/twitter-icon.svg"></a>
-      <a class="github" href="https://github.com/okfde/offenerhaushalt.de"><img style="width: 22px" src="/static/img/github.png"></a>
+      <a href="https://twitter.com/{{site.twitter_username}}"><img style="width: 22px" src="/static/img/twitter-icon.svg"></a>
+      <a class="github" href="https://github.com/{{site.github_username}}/{{site.github_repo}}"><img style="width: 22px" src="/static/img/github.png"></a>
     </li>
     <li>
-      <a href="{{ relative-baseurl }}page/finanzdaten.html">Über Finanzdaten</a>
+      <a href="{{ relative-baseurl }}page/finanzdaten.html">{{ translate.nav.top.about }}</a>
     </li>
     <li class="spendet">
-      <a href="{{ relative-baseurl }}page/spenden.html">Spenden</a>
+      <a href="{{ relative-baseurl }}page/spenden.html">{{ translate.nav.top.donate }}</a>
     </li>
   </ul>
 </div>
@@ -20,7 +20,7 @@
   <div class="container relbox">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="sr-only">Toggle navigation</span>
+        <span class="sr-only">{{ translate.nav.toggle }}</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -32,21 +32,19 @@
  </div>
     <ul class="navbar right-nav">
       {% if page.url == '/' %}
-      <li><i class="fa fa-search"></i>Datensatz finden</li>
+      <li><i class="fa fa-search"></i>{{ translate.nav.bar.search }}</li>
       {% else %}
-      <li><a href="{{ relative-baseurl }}"><i class="fa fa-search"></i>Datensatz finden</a></li>
+      <li><a href="{{ relative-baseurl }}"><i class="fa fa-search"></i>{{ translate.nav.bar.search }}</a></li>
       {% endif %}
       {% if page.url contains 'hinzufuegen' %}
-      <li><i class="fa fa-plus"></i> Datensatz hinzufügen</li>
+      <li><i class="fa fa-plus"></i> {{ translate.nav.bar.add }}</li>
       {% else %}
-      <li><a href="{{ relative-baseurl }}hinzufuegen/"><i class="fa fa-plus"></i> Datensatz hinzufügen</a></li>
+      <li><a href="{{ relative-baseurl }}hinzufuegen/"><i class="fa fa-plus"></i> {{ translate.nav.bar.add }}</a></li>
       {% endif %}
       {% if page.url contains 'hilfestellung' %}
-      <li class="active"><a href="{{ relative-baseurl }}hilfestellung/"><i class="fa fa-life-ring"></i> Hilfe&shy;stellung</a></li>
+      <li class="active"><a href="{{ relative-baseurl }}hilfestellung/"><i class="fa fa-life-ring"></i> {{ translate.nav.bar.help }}</a></li>
       {% else %}
-      <li><a href="{{ relative-baseurl }}hilfestellung/"><i class="fa fa-life-ring"></i> Hilfe&shy;stellung</a></li>
+      <li><a href="{{ relative-baseurl }}hilfestellung/"><i class="fa fa-life-ring"></i> {{ translate.nav.bar.help }}</a></li>
       {% endif %}
     </ul>
 </nav>
-
-

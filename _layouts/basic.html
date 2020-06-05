@@ -1,9 +1,10 @@
 {% include relative-baseurl.html %}
+{% assign translate = site.data.locales[page.lang][page.lang] %}
 <!DOCTYPE html>
 <html lang="de">
 <head>
 {% include head.html %}
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
   {{ content }}

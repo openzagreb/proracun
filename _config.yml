@@ -21,8 +21,13 @@ baseurl: ''
 # the base hostname & protocol for your site, e.g. http://example.com
 url: 'https://dev.proracun.org'
 
+# set the default language
+default_lang: hr
+
 twitter_username: openzagreb
-github_username:  openzagreb
+github_username: openzagreb
+github_repo: proracun
+foia_url: 'https://imamopravoznati.org/'
 
 # Haushalte
 collections:

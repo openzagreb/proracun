@@ -10,8 +10,7 @@ script_include: home
       <div class="row welcome">
         <div class="col-xs-12 col-md-12">
           <div class="front-message">
-            Haushaltsdaten einfach
-            verständlich präsentieren.
+            {{ translate.index.lead }}
           </div>
         </div>
       </div>
@@ -20,15 +19,14 @@ script_include: home
       <div class="row map">
         <div class="col-xs-12 col-md-7">
           <p class="claim">
-            Stöbern Sie in
-            den Datensätzen
+            {{ translate.index.explore }}
           </p>
           <div id="default-welcome">
             <p>
-            <b>Wählen Sie aus:</b>
+            <b>{{ translate.index.choose }}:</b>
             <p>
             <select id="selectState" class="select-state">
-              <option value="" disabled selected>Bundesland</option>
+              <option value="" disabled selected>{{ translate.index.select }}</option>
               {% for admindivisiontop in site.data.admindivisiontop %}
               <option value="{{ admindivisiontop['code'] }}">{{ admindivisiontop['name'] }}</option>
               {% endfor %}
@@ -47,31 +45,35 @@ script_include: home
     <div id="search-results" class="container" style="display: none">
       <div class="row">
         <div class="col col-xs-12 col-md-12">
-          <div class="close-search">zurück <img src="/static/img/mini-map.png"></div>
-          <h1>Wir haben leider noch keinen Haushalt für <span class="city-name" id="search-city-name"></span></h1>
+          <div class="close-search">{{ translate.index.back }} <img src="/static/img/mini-map.png"></div>
+          <h1>{{ translate.index.missing }} <span class="city-name" id="search-city-name"></span></h1>
 
           <hr>
 
+          {% capture getcity %}
+            <span class="city-name"></span>
+          {% endcapture %}
+
+          {% assign investigate_byline = translate.index.investigate %}
           <h2 id="search-info">
-            Schauen Sie auf der Webseite von <span class="city-name"></span> nach, ob es Haushaltsdaten
-          online verfügbar gibt. Oder fragen sie den Datensatz an, entweder…</h2>
+            {{ investigate_byline | replace: "[city_name]", getcity }}
+          </h2>
 
           <div class="fragdenstaat">
-            <h3>Oder über FragDenStaat</h3>
+            <h3>{{ translate.index.foia }}</h3>
 
             <p>
-              Mit nur zwei Klicks können Sie eine verbindliche
-              Informationsfreiheitsanfrage stellen.
+              {{ translate.index.foia.intro }}
             </p>
-            <a class="bluegreen-button" href="https://fragdenstaat.de/">zur Anfrage<i class="fa fa-long-arrow-right"></i></a>
+            <a class="bluegreen-button" href="{{ site.foia_url }}">{{ translate.index.foia.request_link }}<i class="fa fa-long-arrow-right"></i></a>
           </div>
 
-          <h1>Was müssen Sie beachten?</h1>
+          <h1>{{ translate.index.contribute.intro }}</h1>
 
           <ul>
-            <li>Wir brauchen einen Datensatz im CSV- oder Excel-Format</li>
-            <li>Das Minimum an Informationen sind: Zeitpunkt (Jahr), Iznos, die Richtung (Einnahme / Ausgabe), Haushaltstitel</li>
-            <li>Long Format: nur ein Jahr und ein Iznos pro Spalte</li>
+            <li>{{ translate.index.contribute.first }}</li>
+            <li>{{ translate.index.contribute.second }}</li>
+            <li>{{ translate.index.contribute.third }}</li>
           </ul>
 
         </div>
@@ -80,14 +82,14 @@ script_include: home
     <div class="container admindivisiontop-bottom-karte">
       <div class="row">
         <div class="col col-xs-12 col-md-12">
-          <h1>Der Bundeshaushalt 2017 beträgt 329 Milliarden!</h1>
+          <h1>{{ translate.index.master_budget.intro }}</h1>
           <p>
           <div class="treemap-big-preview">
             <p>
-            Schau dir den Haushalt an, um zu erfahren, wo das Geld hinfließt!
+            {{ translate.index.master_budget.description }}
             </p>
           <a class="bluegreen-button" href="/haushalt/bund">
-            zum Bundeshaushalt
+            {{ translate.index.master_budget.button }}
           </a>
           </div>
           </p>
@@ -99,10 +101,13 @@ script_include: home
 <div class="clearfix"></div>
 
 <script id="listing-template" type="text/x-handlebars-template">{% raw %}
+  {% capture getstate %}
+    <strong>{{state.name}}</strong>
+  {% endcapture %}
   {{#if has_sites}}
+    {% assign existing_byline = translate.index.display.exisitng %}
     <p>
-      In <strong>{{state.name}}</strong> haben wir bislang die folgenden Haushalte
-      erschlossen:</p>
+      {{ existing_byline | replace: "[state_name]", getstate }}:</p>
     <ul>
       {{#each sites}}
         <li><strong><a href="{{url}}">{{name}}</a></strong>: {{tagline}}</li>
@@ -110,15 +115,14 @@ script_include: home
     </ul>
   {{/if}}
   {{#if no_sites}}
+    {% assign nonexisting_byline = translate.index.display.nonexisitng %}
     <p>
-      Für <strong>{{state.name}}</strong> steht bislang kein Haushalt
-      zur Verfügung.
+      {{ nonexisting_byline | replace: "[state_name]", getstate }}
     </p>
   {{/if}}
   <p>
-    <strong>Ist ihre Kommune oder ihr Bundesland nicht verfügbar?</strong>
-    <a href="{{ relative-baseurl }}page/mitmachen.html">Machen Sie mit</a>, und erschließen Sie
-    weitere Haushaltsdaten für OffenerHaushalt.
+    <strong>{{ translate.index.display.unavailable }}</strong>
+    <a href="{{ relative-baseurl }}page/mitmachen.html">{{ translate.index.participate.join }}</a>{{ translate.index.participate.make_open }}
   </p>
 {% endraw %}</script>
 
@@ -126,9 +130,8 @@ script_include: home
   <p><strong><a href="{{city.url}}">{{city.name}}</a></strong></p>
   <p>{{city.tagline}}</p>
   <p>
-    <strong>Ist ihre Kommune oder ihr Bundesland nicht verfügbar?</strong>
-    <a href="{{ relative-baseurl }}page/mitmachen.html">Machen Sie mit</a>, und erschließen Sie
-    weitere Haushaltsdaten für OffenerHaushalt.
+    <strong>{{ translate.index.display.unavailable }}</strong>
+    <a href="{{ relative-baseurl }}page/mitmachen.html">{{ translate.index.participate.join }}</a>{{ translate.index.participate.make_open }}
   </p>
 {% endraw %}</script>
 
