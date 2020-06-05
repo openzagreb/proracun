@@ -46,7 +46,12 @@
     return -1;
   };
 
-  var config = {% include config/{{ page.config.json }}.json %}
+  {% for os_config in site.os_config %}
+  {% if os_config.name == page.config.json %}
+  var config = {{ os_config.content }}
+  {% endif %}
+  {% endfor %}
+
   var embedCode = $('#embed-code')
 
   dpvis.treemap('#treemap-budget', config)

@@ -26,6 +26,8 @@ github_username:  openzagreb
 
 # Haushalte
 collections:
+  os_config:
+    output: true
   budget:
     output: true
     permalink: /ohaushalt/:name/
@@ -57,8 +59,6 @@ exclude:
 sass:
   sass_dir: static/css/_scss
   style: compressed
-includes:
-- data
 
 # Defaults
 defaults:
@@ -73,6 +73,10 @@ defaults:
     values:
       layout: page
       framed: true
+  -
+    scope:
+      path: "_data/os-config"
+      type: os_config
   -
     scope:
       path: "_budget"
