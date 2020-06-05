@@ -2,7 +2,6 @@
 layout: city
 ---
 
-{% assign translate = site.data.locales[page.lang][page.lang] %}
 {% assign landcities = site.haushalte | where: "state", page.code %}
 {% assign cities = landcities | where: "level", "kommune" | where: "layout", "budget2" %}
 

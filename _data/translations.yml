@@ -10,3 +10,81 @@ navTopAbout:
 navTopDonate:
   de: "Spenden"
   hr: "Doniraj"
+navToggle:
+  de: "Toggle navigation"
+  hr: "Prebaci navigaciju"
+navBarSearch:
+  de: "Datensatz finden"
+  hr: "Pronađi proračun"
+navBarAdd:
+  de: "Datensatz hinzufügen"
+  hr: "Dodaj proračun"
+navBarHelp:
+  de: "Hilfe&shy;stellung"
+  hr: "Pomozi nam"
+indexLead:
+  de: "Haushaltsdaten einfach verständlich präsentieren."
+  hr: "Otvoreni proračun je transparentan pregled prihoda i rashoda gradova, općina i županija."
+indexExplore:
+  de: "Stöbern Sie in den Datensätzen"
+  hr: "Pretraži zapise"
+indexChoose:
+  de: "Wählen Sie aus"
+  hr: "Izaberi"
+indexSelect:
+  de: "Bundesland"
+  hr: "županija"
+indexBack:
+  de: "zurück"
+  hr: "povratak"
+indexMissing:
+  de: "Wir haben leider noch keinen Haushalt für"
+  hr: "Nažalost, nemamo proračun za"
+indexInvestigate:
+  de: "Schauen Sie auf der Webseite von  nach, ob es Haushaltsdaten [city_name] online verfügbar gibt. Oder fragen sie den Datensatz an, entweder…"
+  hr: "Provjeri na internetskim stranicama jesu li podaci o proračunu za [naziv grada] objavljeni. Ili zatraži napismeno, bilo…"
+indexFoiaAction:
+  de: "Oder über FragDenStaat"
+  hr: "Putem Imamo pravo znati"
+indexFoiaIntro:
+  de: "Mit nur zwei Klicks können Sie eine verbindliche Informationsfreiheitsanfrage stellen."
+  hr: "U samo dva klika možeš napraviti obvezujući zahtjev za pristup informacija."
+indexFoiaRequestLink:
+  de: "zur Anfrage"
+  hr: "pošalji zahtjev"
+indexContributeIntro:
+  de: "Was müssen Sie beachten?"
+  hr: "Što treba uzeti u obzir?"
+indexContributeFirst:
+  de: "Wir brauchen einen Datensatz im CSV- oder Excel-Format"
+  hr: "Potreban nam je zapis podataka u CSV ili Excel formatu"
+indexContributeSecond:
+  de: "Das Minimum an Informationen sind: Zeitpunkt (Jahr), Iznos, die Richtung (Einnahme / Ausgabe), Haushaltstitel"
+  hr: "Minimalne informacije su: vrijeme (godina), iznos, smjer (prihod/rashod), naziv tijela javne vlasti"
+indexContributeThird:
+  de: "Long Format: nur ein Jahr und ein Iznos pro Spalte"
+  hr: "Detaljan format: samo jedna godina i jedan iznos po stupcu"
+indexMasterBudgetIntro:
+  de: "Der Bundeshaushalt 2017 beträgt 329 Milliarden!"
+  hr:
+indexMasterBudgetDescription:
+  de: "Schau dir den Haushalt an, um zu erfahren, wo das Geld hinfließt!"
+  hr:
+indexMasterBudgetButton:
+  de: "zum Bundeshaushalt"
+  hr:
+indexDisplayExisting:
+  de: "In [state_name] haben wir bislang die folgenden Haushalte erschlossen"
+  hr:
+indexDisplayNonexisting:
+  de: "Für [state_name] steht bislang kein Haushalt zur Verfügung."
+  hr:
+indexDisplayUnavailable:
+  de: "Ist ihre Kommune oder ihr Bundesland nicht verfügbar?"
+  hr:
+indexParticipateJoin:
+  de: "Machen Sie mit"
+  hr: "Uključi se"
+indexParticipateMakeOpen:
+  de: ", und erschließen Sie weitere Haushaltsdaten für OffenerHaushalt."
+  hr: ", i otvori nove proračunske podatke na portalu Otvoreni proračun."
