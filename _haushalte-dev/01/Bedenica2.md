@@ -4,7 +4,8 @@ state: "01"
 name: Bedenica2
 text:
 level: kommune
-config: hr-01-bedenica
+config:
+  json: hr-01-bedenica
 date: '2020-06-04T00:00:00.000Z'
 slug: bedenica2
 ---
