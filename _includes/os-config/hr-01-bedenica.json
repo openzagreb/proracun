@@ -34,8 +34,8 @@
       "label_ref": "vrsta.vrsta",
       "ref": "vrsta",
       "default": true,
-      "defaultValue": "",
-      "defaultLabel": "All",
+      "defaultValue": "Funkcijska klasifikacija ostvarenje",
+      "defaultLabel": "Funkcijska klasifikacija ostvarenje",
       "label": "Vrsta",
       "values": [
         {
@@ -80,8 +80,8 @@
       "label_ref": "godina.godina",
       "ref": "godina",
       "default": true,
-      "defaultValue": "",
-      "defaultLabel": "All",
+      "defaultValue": "2010",
+      "defaultLabel": "2010",
       "label": "Godina",
       "values": [
         {
