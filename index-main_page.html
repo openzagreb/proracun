@@ -5,6 +5,7 @@ script_include: home
 lang: hr
 ---
 {% include relative-baseurl.html %}
+{% assign translate = site.data.locales[page.lang][page.lang] %}
 
 <div class="main-content">
     <div class="container message-container">
