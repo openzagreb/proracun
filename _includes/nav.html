@@ -1,7 +1,7 @@
 {% assign translate = site.data.locales[page.lang][page.lang] %}
 <div class="navbar-top collapse navbar-collapse navbar-ex1-collapse">
   <div class="top-message">
-    {{ translate.nav.top.message }}
+    {{ translate.nav.top.message }} {{ site.data.translations['navTopMessage'][page.lang] }}
   </div>
   <ul class="nav navbar-nav">
     <li>
@@ -9,10 +9,10 @@
       <a class="github" href="https://github.com/{{site.github_username}}/{{site.github_repo}}"><img style="width: 22px" src="/static/img/github.png"></a>
     </li>
     <li>
-      <a href="{{ relative-baseurl }}page/finanzdaten.html">{{ translate.nav.top.about }}</a>
+      <a href="{{ relative-baseurl }}page/finanzdaten.html">{{ translate.nav.top.about }} {{ site.data.translations['navTopAbout'][page.lang] }}</a>
     </li>
     <li class="spendet">
-      <a href="{{ relative-baseurl }}page/spenden.html">{{ translate.nav.top.donate }}</a>
+      <a href="{{ relative-baseurl }}page/spenden.html">{{ translate.nav.top.donate }} {{ site.data.translations['navTopDonate'][page.lang] }}</a>
     </li>
   </ul>
 </div>
