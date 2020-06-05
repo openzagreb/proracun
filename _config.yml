@@ -57,6 +57,8 @@ exclude:
 sass:
   sass_dir: static/css/_scss
   style: compressed
+includes:
+- _data
 
 # Defaults
 defaults:
