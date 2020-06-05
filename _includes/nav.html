@@ -1,6 +1,6 @@
 <div class="navbar-top collapse navbar-collapse navbar-ex1-collapse">
   <div class="top-message">
-    {{ site.data.translations['navTopMessage'][page.lang] }}
+    {{ site.data.translations['navTopMessage'][lang] }}
   </div>
   <ul class="nav navbar-nav">
     <li>
@@ -8,10 +8,10 @@
       <a class="github" href="https://github.com/{{site.github_username}}/{{site.github_repo}}"><img style="width: 22px" src="/static/img/github.png"></a>
     </li>
     <li>
-      <a href="{{ relative-baseurl }}page/finanzdaten.html">{{ site.data.translations['navTopAbout'][page.lang] }}</a>
+      <a href="{{ relative-baseurl }}page/finanzdaten.html">{{ site.data.translations['navTopAbout'][lang] }}</a>
     </li>
     <li class="spendet">
-      <a href="{{ relative-baseurl }}page/spenden.html">{{ site.data.translations['navTopDonate'][page.lang] }}</a>
+      <a href="{{ relative-baseurl }}page/spenden.html">{{ site.data.translations['navTopDonate'][lang] }}</a>
     </li>
   </ul>
 </div>
@@ -20,7 +20,7 @@
   <div class="container relbox">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="sr-only">{{ site.data.translations['navToggle'][page.lang] }}</span>
+        <span class="sr-only">{{ site.data.translations['navToggle'][lang] }}</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -32,19 +32,19 @@
  </div>
     <ul class="navbar right-nav">
       {% if page.url == '/' %}
-      <li><i class="fa fa-search"></i>{{ site.data.translations['navBarSearch'][page.lang] }}</li>
+      <li><i class="fa fa-search"></i>{{ site.data.translations['navBarSearch'][lang] }}</li>
       {% else %}
-      <li><a href="{{ relative-baseurl }}"><i class="fa fa-search"></i>{{ site.data.translations['navBarSearch'][page.lang] }}</a></li>
+      <li><a href="{{ relative-baseurl }}"><i class="fa fa-search"></i>{{ site.data.translations['navBarSearch'][lang] }}</a></li>
       {% endif %}
       {% if page.url contains 'hinzufuegen' %}
-      <li><i class="fa fa-plus"></i> {{ site.data.translations['navBarAdd'][page.lang] }}</li>
+      <li><i class="fa fa-plus"></i> {{ site.data.translations['navBarAdd'][lang] }}</li>
       {% else %}
-      <li><a href="{{ relative-baseurl }}hinzufuegen/"><i class="fa fa-plus"></i> {{ site.data.translations['navBarAdd'][page.lang] }}</a></li>
+      <li><a href="{{ relative-baseurl }}hinzufuegen/"><i class="fa fa-plus"></i> {{ site.data.translations['navBarAdd'][lang] }}</a></li>
       {% endif %}
       {% if page.url contains 'hilfestellung' %}
-      <li class="active"><a href="{{ relative-baseurl }}hilfestellung/"><i class="fa fa-life-ring"></i> {{ site.data.translations['navBarHelp'][page.lang] }}</a></li>
+      <li class="active"><a href="{{ relative-baseurl }}hilfestellung/"><i class="fa fa-life-ring"></i> {{ site.data.translations['navBarHelp'][lang] }}</a></li>
       {% else %}
-      <li><a href="{{ relative-baseurl }}hilfestellung/"><i class="fa fa-life-ring"></i> {{ site.data.translations['navBarHelp'][page.lang] }}</a></li>
+      <li><a href="{{ relative-baseurl }}hilfestellung/"><i class="fa fa-life-ring"></i> {{ site.data.translations['navBarHelp'][lang] }}</a></li>
       {% endif %}
     </ul>
 </nav>
