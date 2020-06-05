@@ -46,11 +46,7 @@
     return -1;
   };
 
-  {% for os_config in site.os_config %}
-  {% if os_config.name == page.config.json %}
-  var config = {{ os_config.content }}
-  {% endif %}
-  {% endfor %}
+  var config = {% include os-config/{{ page.config.json }}.json %}
 
   var embedCode = $('#embed-code')
 

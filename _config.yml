@@ -30,7 +30,7 @@ collections:
     output: true
   budget:
     output: true
-    permalink: /ohaushalt/:name/
+    permalink: /proracun/:name/
   haushalte:
     output: true
     permalink: /prikaz/:name/
@@ -73,10 +73,6 @@ defaults:
     values:
       layout: page
       framed: true
-  -
-    scope:
-      path: "_data/config"
-      type: os_config
   -
     scope:
       path: "_budget"
