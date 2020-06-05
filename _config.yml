@@ -75,7 +75,7 @@ defaults:
       framed: true
   -
     scope:
-      path: "_data/os-config"
+      path: "_data/config"
       type: os_config
   -
     scope:
