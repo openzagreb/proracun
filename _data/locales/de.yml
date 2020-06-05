@@ -1,0 +1,41 @@
+de:
+  locale_name: Deutsch
+  nav:
+    top:
+      message: Wir sind unabhängig, nicht gewinnorientiert und arbeiten viel ehrenamtlich.
+      about: Über Finanzdaten
+      donate: Spenden
+    toggle: Toggle navigation
+    bar:
+      search: Datensatz finden
+      add: Datensatz hinzufügen
+      help: Hilfe&shy;stellung
+  index:
+    lead: Haushaltsdaten einfach verständlich präsentieren.
+    explore: Stöbern Sie in den Datensätzen
+    choose: Wählen Sie aus
+    select: Bundesland
+    back: zurück
+    missing: Wir haben leider noch keinen Haushalt für
+    investigate: "Schauen Sie auf der Webseite von  nach, ob es Haushaltsdaten [city_name] online verfügbar gibt. Oder fragen sie den Datensatz an, entweder…"
+    foia:
+      action: Oder über FragDenStaat
+      intro: Mit nur zwei Klicks können Sie eine verbindliche Informationsfreiheitsanfrage stellen.
+      request_link: zur Anfrage
+    contribute:
+      intro: Was müssen Sie beachten?
+      first: Wir brauchen einen Datensatz im CSV- oder Excel-Format
+      second: "Das Minimum an Informationen sind: Zeitpunkt (Jahr), Iznos, die Richtung (Einnahme / Ausgabe), Haushaltstitel"
+      third: "Long Format: nur ein Jahr und ein Iznos pro Spalte"
+    master_budget:
+      intro: Der Bundeshaushalt 2017 beträgt 329 Milliarden!
+      description: Schau dir den Haushalt an, um zu erfahren, wo das Geld hinfließt!
+      button: zum Bundeshaushalt
+    display:
+      existing: "In [state_name] haben wir bislang die folgenden Haushalte erschlossen"
+      nonexisting: "Für [state_name] steht bislang kein Haushalt zur Verfügung."
+      unavailable: Ist ihre Kommune oder ihr Bundesland nicht verfügbar?
+    participate:
+      # following makes one sentence in order [join], [make_open].
+      join: Machen Sie mit
+      make_open: ", und erschließen Sie weitere Haushaltsdaten für OffenerHaushalt."

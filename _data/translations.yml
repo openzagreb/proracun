@@ -88,27 +88,3 @@ indexParticipateJoin:
 indexParticipateMakeOpen:
   de: ", und erschließen Sie weitere Haushaltsdaten für OffenerHaushalt."
   hr: ", i otvori nove proračunske podatke na portalu Otvoreni proračun."
-footerFinancialData:
-  de: "Über Finanzdaten"
-  hr: "O financijskim podacima"
-footerAbout:
-  de: "Über das Projekt"
-  hr: "O projektu"
-footerDataStandard:
-  de: "Datenstandard"
-  hr: "Struktura podataka"
-footerParticipate:
-  de: "Mitmachen"
-  hr: "Sudjeluj"
-footerMoreInfo:
-  de: "Weitere Informationen"
-  hr: "Više informacija"
-footerGithub:
-  de: "Github"
-  hr: "Github"
-footerImpressum:
-  de: "Impressum"
-  hr: "Uredništvo"
-footerGdprMessage:
-  de: 'Offenerhaushalt.de nutzt statt den üblichen externen Dienstleistern die datenschutzfreundlichere Technologie von <a href="https://matomo.org">Matomo</a>, um statistische Auswertungen der Seitennutzung zu erhalten. Wenn sie dies nicht wollen, <a href="https://traffic.okfn.de/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=de">klicken Sie bitte hier und entfernen Sie den Haken</a>. Näheres in <a href="/impressum/#datenschutzerklaerung">unserer Datenschutzerklärung</a>.'
-  hr: ''

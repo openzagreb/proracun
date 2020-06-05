@@ -1,32 +1,26 @@
-{% if page.lang %}
-  {% assign lang = page.lang %}
-{% else %}
-  {% assign lang = site.default_lang %}
-{% endif %}
-
 <footer>
   <div class="container">
     <div class="row">
       <div class="col-sm-3 col-md-2 hidden-xs">
-        <a class="logo" href="{{ site.owner.url }}">
-          <img src="{{ relative-baseurl }}static/img/{{ site.owner.logo_svg }}" alt="{{ site.owner.title }}" />
+        <a class="logo" href="https://okfn.de">
+          <img src="{{ relative-baseurl }}static/img/okfn-logo-white.svg" alt="Open Knowledge Foundation Deutschland e.V." />
         </a>
       </div>
       <div class="links col-xs-12 col-sm-7 col-md-7">
         <ul>
-          <li><a href="{{ relative-baseurl }}page/financialdata.html">{{ site.data.translations['footerFinancialData'][lang] }}</a></li>
-          <li><a href="{{ relative-baseurl }}page/aboutproject.html">{{ site.data.translations['footerAbout'][lang] }}</a></li>
-          <li><a href="{{ relative-baseurl }}page/datastandard.html">{{ site.data.translations['footerDataStandard'][lang] }}</a></li>
-          <li><a href="{{ relative-baseurl }}page/participate.html">{{ site.data.translations['footerParticipate'][lang] }}</a></li>
-          <li><a href="{{ relative-baseurl }}page/moreinfo.html">{{ site.data.translations['footerMoreInfo'][lang] }}</a></li>
-          <li><a href="https://github.com/{{site.github_username}}/{{site.github_repo}}">{{ site.data.translations['footerGithub'][lang] }}</a></li>
-          <li><a href="{{ relative-baseurl }}page/impressum.html">{{ site.data.translations['footerImpressum'][lang] }}</a></li>
+          <li><a href="{{ relative-baseurl }}page/finanzdaten.html">Über Finanzdaten</a></li>
+          <li><a href="{{ relative-baseurl }}page/ueber_das_projekt.html">Über das Projekt</a></li>
+          <li><a href="{{ relative-baseurl }}page/datenstandard.html">Datenstandard</a></li>
+          <li><a href="{{ relative-baseurl }}page/mitmachen.html">Mitmachen</a></li>
+          <li><a href="{{ relative-baseurl }}page/weitere_informationen.html">Weitere Informationen</a></li>
+          <li><a href="https://github.com/okfde/offenerhaushalt.de">Github</a></li>
+          <li><a href="{{ relative-baseurl }}page/impressum.html">Impressum</a></li>
         </ul>
       </div>
     </div>
     <div class="row">
       <div class="gdpr-message col-xs-24 cols-sm-24 col-md-24">
-        {{ site.data.translations['footerGdprMessage'][lang] }}
+        Offenerhaushalt.de nutzt statt den üblichen externen Dienstleistern die datenschutzfreundlichere Technologie von <a href="https://matomo.org">Matomo</a>, um statistische Auswertungen der Seitennutzung zu erhalten. Wenn sie dies nicht wollen, <a href="https://traffic.okfn.de/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=de">klicken Sie bitte hier und entfernen Sie den Haken</a>. Näheres in <a href="/impressum/#datenschutzerklaerung">unserer Datenschutzerklärung</a>.
       </div>
     </div>
   </div>

@@ -1,0 +1,41 @@
+de:
+  locale_name: hrvatski
+  nav:
+    top:
+      message: Neovisni smo, neprofitni smo i radimo volonterski.
+      about: Javne financije
+      donate: Doniraj
+    toggle: Prebaci navigaciju
+    bar:
+      search: Pronađi proračun
+      add: Dodaj proračun
+      help: Pomozi nam
+  index:
+    lead: Otvoreni proračun je transparentan pregled prihoda i rashoda gradova, općina i županija.
+    explore: Pretraži zapise
+    choose: Izaberi
+    select: županija
+    back: povratak
+    missing: Nažalost, nemamo proračun za
+    investigate: "Provjeri na internetskim stranicama jesu li podaci o proračunu za [naziv grada] objavljeni. Ili zatraži napismeno, bilo…"
+    foia:
+      action: Putem Imamo pravo znati
+      intro: U samo dva klika možeš napraviti obvezujući zahtjev za pristup informacija.
+      request_link: pošalji zahtjev
+    contribute:
+      intro: Što treba uzeti u obzir?
+      first: Potreban nam je zapis podataka u CSV ili Excel formatu
+      second: "Minimalne informacije su: vrijeme (godina), iznos, smjer (prihod/rashod), naziv tijela javne vlasti"
+      third: "Detaljan format: samo jedna godina i jedan iznos po stupcu"
+    master_budget:
+      intro: Der Bundeshaushalt 2017 beträgt 329 Milliarden!
+      description: Schau dir den Haushalt an, um zu erfahren, wo das Geld hinfließt!
+      button: zum Bundeshaushalt
+    display:
+      existing: "In [state_name] haben wir bislang die folgenden Haushalte erschlossen"
+      nonexisting: "Für [state_name] steht bislang kein Haushalt zur Verfügung."
+      unavailable: Ist ihre Kommune oder ihr Bundesland nicht verfügbar?
+    participate:
+      # following makes one sentence in order [join], [make_open].
+      join: Uključi se
+      make_open: ", i otvori nove proračunske podatke na portalu Otvoreni proračun."
