@@ -5,8 +5,8 @@
 # yourself editing this file very often, consider using Jekyll's data files
 # feature for the data you need to update frequently.
 #
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# If for any reason this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve', please restart the server process.
 
 # Site settings
 title: 'Otvoreni proračun'
@@ -23,6 +23,18 @@ url: 'https://dev.proracun.org'
 
 # set the default language
 default_lang: hr
+
+site_logo: 'ohh-logo.svg'
+analytics:
+  enable: false
+  google_analytics:
+    enable: false
+    code: ""
+  piwik:
+    enable: false
+    tracking_pixel_uri: "/piwik.okfn.de/piwik.php?idsite=4"
+    link_tracking: "//traffic.okfn.de/"
+footerGdprMessage: false
 
 twitter_username: openzagreb
 github_username: openzagreb
