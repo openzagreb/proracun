@@ -46,7 +46,9 @@
     return -1;
   };
 
-  var config = {% include os-config/{{ page.config.json }}.json %}
+  var config = {{ site.data.config.[page.config.json].json }}
+
+  //var config = {% include os-config/{{ page.config.json }}.json %}
 
   var embedCode = $('#embed-code')
 
