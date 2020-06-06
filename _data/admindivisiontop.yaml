@@ -2,61 +2,61 @@
   code:  "ZGZ"
 
 - name: "Krapinsko-zagorska županija"
-  code:  "02"
+  code:  "KZZ"
 
 - name: "Sisačko-moslavačka županija"
-  code:  "03"
+  code:  "SMZ"
 
 - name: "Karlovačka županija"
-  code:  "04"
+  code:  "KAZ"
 
 - name: "Varaždinska županija"
-  code:  "05"
+  code:  "VZZ"
 
 - name: "Koprivničko-križevačka županija"
-  code:  "06"
+  code:  "KKZ"
 
 - name: "Bjelovarsko-bilogorska županija"
-  code:  "07"
+  code:  "BBZ"
 
 - name: "Primorsko-goranska županija"
-  code:  "08"
+  code:  "PGZ"
 
 - name: "Ličko-senjska županija"
-  code:  "09"
+  code:  "LSZ"
 
 - name: "Virovitičko-podravska županija"
-  code:  "10"
+  code:  "VPZ"
 
 - name: "Požeško-slavonska županija"
-  code:  "11"
+  code:  "PSZ"
 
 - name: "Brodsko-posavska županija"
-  code: "12"
+  code: "BPZ"
 
 - name: "Zadarska županija"
-  code:  "13"
+  code:  "ZDZ"
 
 - name: "Osječko-baranjska županija"
-  code:  "14"
+  code:  "OBZ"
 
 - name: "Šibensko-kninska županija"
-  code:  "15"
+  code:  "SKZ"
 
 - name: "Vukovarsko-srijemska županija"
-  code:  "16"
+  code:  "VSZ"
 
 - name: "Splitsko-dalmatinska županija"
-  code:  "17"
+  code:  "SDZ"
 
 - name: "Istarska županija"
-  code:  "18"
+  code:  "ISZ"
 
 - name: "Dubrovačko-neretvanska županija"
-  code:  "19"
+  code:  "DNZ"
 
 - name: "Međimurska županija"
-  code:  "20"
+  code:  "MEZ"
 
 - name: "Grad Zagreb"
   code:  "GZZ"
