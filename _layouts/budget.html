@@ -4,6 +4,12 @@ layout: default
 ---
 {% include relative-baseurl.html %}
 
+{% if page.lang %}
+  {% assign lang = page.lang %}
+{% else %}
+  {% assign lang = site.default_lang %}
+{% endif %}
+
 <h1 class="page-header site" id="site-name">{{page.name}}</h1>
 
 <div class="row">

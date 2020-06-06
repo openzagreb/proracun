@@ -41,7 +41,7 @@ indexMissing:
   de: "Wir haben leider noch keinen Haushalt für"
   hr: "Nažalost, nemamo proračun za"
 indexInvestigate:
-  de: "Schauen Sie auf der Webseite von  nach, ob es Haushaltsdaten [city_name] online verfügbar gibt. Oder fragen sie den Datensatz an, entweder…"
+  de: "Schauen Sie auf der Webseite von [city_name] nach, ob es Haushaltsdaten online verfügbar gibt. Oder fragen sie den Datensatz an, entweder…"
   hr: "Provjeri na internetskim stranicama jesu li podaci o proračunu za [naziv grada] objavljeni. Ili zatraži napismeno, bilo…"
 indexFoiaAction:
   de: "Oder über FragDenStaat"
@@ -88,3 +88,6 @@ indexParticipateJoin:
 indexParticipateMakeOpen:
   de: ", und erschließen Sie weitere Haushaltsdaten für OffenerHaushalt."
   hr: ", i otvori nove proračunske podatke na portalu Otvoreni proračun."
+budgetIntro:
+  de: "Wählen Sie aus, nach welchen Feldern der Haushalt sortiert sein soll"
+  hr: "Odaberite parametre po kojima će proračun biti prikazan"
