@@ -73,7 +73,7 @@ config: |-
     }
   },
   'level': 'land',
-  'state': 'BE',
+  'state': 'ZGZ',
   'name': 'Berlin',
   'text': 'Haushalt',
   'hasBarChart': false,
