@@ -1,6 +1,6 @@
 ---
 _id: 4d28ef90-132b-11e8-baa8-9788832e013f
-state: HE
+state: TH
 name: Frankfurt
 level: kommune
 config: |-
@@ -119,7 +119,7 @@ config: |-
       }
     },
     "level": "kommune",
-    "state": "HE",
+    "state": "TH",
     "name": "Frankfurt",
     "text": "la la la"
   }
