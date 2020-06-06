@@ -88,6 +88,27 @@ indexParticipateJoin:
 indexParticipateMakeOpen:
   de: ", und erschließen Sie weitere Haushaltsdaten für OffenerHaushalt."
   hr: ", i otvori nove proračunske podatke na portalu Otvoreni proračun."
+footerFinancialData:
+  de: "Über Finanzdaten"
+  hr: "O financijskim podacima"
+footerAbout:
+  de: "Über das Projekt"
+  hr: "O projektu"
+footerDataStandard:
+  de: "Datenstandard"
+  hr: "Struktura podataka"
+footerParticipate:
+  de: "Mitmachen"
+  hr: "Sudjeluj"
+footerMoreInfo:
+  de: "Weitere Informationen"
+  hr: "Više informacija"
+footerGithub:
+  de: "Github"
+  hr: "Github"
+footerImpressum:
+  de: "Impressum"
+  hr: "Uredništvo"
 budgetIntro:
   de: "Wählen Sie aus, nach welchen Feldern der Haushalt sortiert sein soll"
   hr: "Odaberite parametre po kojima će proračun biti prikazan"
