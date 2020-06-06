@@ -1,5 +1,5 @@
 - name: "Zagrebačka županija"
-  code:  "01"
+  code:  "ZGZ"
 
 - name: "Krapinsko-zagorska županija"
   code:  "02"
@@ -59,7 +59,7 @@
   code:  "20"
 
 - name: "Grad Zagreb"
-  code:  "21"
+  code:  "GZZ"
 
 - name: "Testing"
   code:  "TH"

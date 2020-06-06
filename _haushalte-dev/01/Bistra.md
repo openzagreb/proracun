@@ -1,6 +1,6 @@
 ---
 _id: e9db1030-0141-11e8-86e6-dd2a0f61d6b7
-state: "01"
+state: ZGZ
 name: Bistra
 text:
 level: kommune
