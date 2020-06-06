@@ -42,7 +42,7 @@ layout: default
     <div id="search-results" class="container">
       <div class="row">
         <div class="budget-page col col-xs-12 col-md-12">
-          <h1>{{ site.data.translations['indexMissing'][page.lang] }} <span class="city-name" id="search-city-name">{{ page.name }}</span></h1>
+          <h1>{{ site.data.translations['indexMissing'][lang] }} <span class="city-name" id="search-city-name">{{ page.name }}</span></h1>
 
           <hr>
 
@@ -50,26 +50,26 @@ layout: default
             <span class="city-name">{{ page.name }}</span>
           {% endcapture %}
 
-          {% assign investigate_byline = site.data.translations['indexInvestigate'][page.lang] %}
+          {% assign investigate_byline = site.data.translations['indexInvestigate'][lang] %}
           <h2 id="search-info">
             {{ investigate_byline | replace: "[city_name]", getcity }}
           </h2>
 
           <div class="fragdenstaat">
-            <h3>{{ site.data.translations['indexFoiaAction'][page.lang] }}</h3>
+            <h3>{{ site.data.translations['indexFoiaAction'][lang] }}</h3>
 
             <p>
-              {{ site.data.translations['indexFoiaIntro'][page.lang] }}
+              {{ site.data.translations['indexFoiaIntro'][lang] }}
             </p>
-            <a class="bluegreen-button" href="{{ site.foia_url }}">{{ site.data.translations['indexFoiaRequestLink'][page.lang] }} <i class="fa fa-long-arrow-right"></i></a>
+            <a class="bluegreen-button" href="{{ site.foia_url }}">{{ site.data.translations['indexFoiaRequestLink'][lang] }} <i class="fa fa-long-arrow-right"></i></a>
           </div>
 
-          <h1>{{ site.data.translations['indexContributeIntro'][page.lang] }}</h1>
+          <h1>{{ site.data.translations['indexContributeIntro'][lang] }}</h1>
 
           <ul>
-            <li>{{ site.data.translations['indexContributeFirst'][page.lang] }}</li>
-            <li>{{ site.data.translations['indexContributeSecond'][page.lang] }}</li>
-            <li>{{ site.data.translations['indexContributeThird'][page.lang] }}</li>
+            <li>{{ site.data.translations['indexContributeFirst'][lang] }}</li>
+            <li>{{ site.data.translations['indexContributeSecond'][lang] }}</li>
+            <li>{{ site.data.translations['indexContributeThird'][lang] }}</li>
           </ul>
 
         </div>

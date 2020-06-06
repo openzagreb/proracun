@@ -1,4 +1,8 @@
-{% assign lang = site.default_lang %}
+{% if page.lang %}
+  {% assign lang = page.lang %}
+{% else %}
+  {% assign lang = site.default_lang %}
+{% endif %}
 
 <footer>
   <div class="container">
