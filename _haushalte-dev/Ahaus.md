@@ -113,7 +113,7 @@ config: |-
     }
   },
   "level": "kommune",
-  "state": "NW",
+  "state": "TW",
   "name": "Ahaus",
   "text": "Haushaltsentwurf der Stadt Ahaus. \nDer Haushaltsentwurf ist in der Ratssitzung am 13. Dezember 2017 eingebracht worden.\n\nEs sind nur ordentliche Erträge und ordentliche Aufwendungen dargestellt. \nAufrufbar sind das Ergebnis 2016, die Ansätze für 2017 und 2018 sowie die Planungen für 2019, 2020 und 2021.\n\nQuelle für die Daten und weitere Informationen auf ahaus.de:\nhttps://www.ahaus.de/rathaus/zahlendatenstatistik/finanzen-steuern/haushaltsplaene.html \n(Haushaltspläne - Rathaus - Stadt Ahaus)\n\nBürgerinfosystem der Stadt Ahaus: \nhttps://secure.ahaus.de/sessionnet/bi/to0040.php?__ksinr=646 \n(Rat 13.12.2017)\n\nExtrahieren der Daten aus der Haushaltsdatei (PDF):\nhttps://thesing.net/2018/01/offener-haushalt\n"
   }
