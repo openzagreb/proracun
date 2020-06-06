@@ -4,8 +4,6 @@ state: "01"
 name: Bistra
 text:
 level: kommune
-config:
-  json:
 date: '2020-06-06T00:00:00.000Z'
 slug: bistra
 ---
