@@ -1,6 +1,6 @@
 ---
 _id: e9db1030-0141-11e8-86e6-dd2a0f61d6b6
-state: NW
+state: TH
 name: Ahaus
 text: >-
   Haushaltsentwurf der Stadt Ahaus.

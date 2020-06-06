@@ -60,3 +60,6 @@
 
 - name: "Grad Zagreb"
   code:  "21"
+
+- name: "Testing"
+  code:  "TH"
