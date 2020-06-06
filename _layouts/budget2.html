@@ -84,9 +84,11 @@ layout: default
             <p>
             {{ site.data.translations['indexMasterBudgetDescription'][lang] }}
             </p>
+          {% if site.data.translations['indexMasterBudgetButton'][lang] %}
           <a class="bluegreen-button" href="/haushalt/bund">
             {{ site.data.translations['indexMasterBudgetButton'][lang] }}
           </a>
+          {% endif %}
           </div>
           </p>
         </div>
