@@ -2,10 +2,18 @@
 layout: city
 ---
 
+<!-- this filename should be "admindivision" -->
+
 {% assign landcities = site.haushalte | where: "state", page.code %}
 {% assign cities = landcities | where: "level", "kommune" | where: "layout", "budget2" %}
 
-{% if page.code == 'DE' %}
+{% if page.lang %}
+  {% assign lang = page.lang %}
+{% else %}
+  {% assign lang = site.default_lang %}
+{% endif %}
+
+{% if page.code == 'site.country_code' %}
 {% else %}
 <script type="text/javascript">
   var cities = {
@@ -21,10 +29,10 @@ layout: city
 </script>
 <div class="row">
   <div class="cities-list col-xs-12 col-md-12">
-    <div class="search-back-button">zurück <img src="/static/img/karte-bundesrepublik-deutschland-small.svg"></div>
+    <div class="search-back-button">{{ site.data.translations['indexBack'][lang] }} <img src="/static/img/karte-bundesrepublik-deutschland-small.svg"></div>
     <h1>{{ page.land }}</h1>
     <p>
-    <input id="search-input" name="search" placeholder="Ort eingeben">
+    <input id="search-input" name="search" placeholder="{{ site.data.translations['adminDivisionSearchPlaceholder'][lang] }}">
     <script type="text/javascript">
       $('.search-back-button').click(function () {
         $('#map-selector').slideDown(400)

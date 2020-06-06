@@ -24,6 +24,8 @@ url: 'https://dev.proracun.org'
 
 # set the default language
 default_lang: hr
+# set the country code in ISO 3166-1 Alpha-2 code
+country_code: HR
 
 site_logo: 'ohh-logo.svg'
 analytics:

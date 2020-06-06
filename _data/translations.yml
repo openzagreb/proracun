@@ -112,3 +112,6 @@ footerImpressum:
 budgetIntro:
   de: "Wählen Sie aus, nach welchen Feldern der Haushalt sortiert sein soll"
   hr: "Odaberite parametre po kojima će proračun biti prikazan"
+adminDivisionSearchPlaceholder:
+  de: "Ort eingeben"
+  hr: "Unesi lokaciju"
