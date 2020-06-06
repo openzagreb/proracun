@@ -2,7 +2,7 @@
 layout: city
 ---
 
-<!-- this filename should be "admindivision" -->
+<!-- this filename was named "bundesland" -->
 
 {% assign landcities = site.haushalte | where: "state", page.code %}
 {% assign cities = landcities | where: "level", "kommune" | where: "layout", "budget2" %}
