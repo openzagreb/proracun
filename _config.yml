@@ -36,6 +36,7 @@ analytics:
     tracking_pixel_uri: "/piwik.okfn.de/piwik.php?idsite=4"
     link_tracking: "//traffic.okfn.de/"
 footerGdprMessage: false
+showMap: false
 
 twitter_username: openzagreb
 github_username: openzagreb
