@@ -42,7 +42,7 @@ indexMissing:
   hr: "Nažalost, nemamo proračun za"
 indexInvestigate:
   de: "Schauen Sie auf der Webseite von [city_name] nach, ob es Haushaltsdaten online verfügbar gibt. Oder fragen sie den Datensatz an, entweder…"
-  hr: "Provjeri na internetskim stranicama jesu li podaci o proračunu za [naziv grada] objavljeni. Ili zatraži napismeno, bilo…"
+  hr: "Provjeri na internetskim stranicama jesu li podaci o proračunu za [city_name] objavljeni. Ili zatraži napismeno, bilo…"
 indexFoiaAction:
   de: "Oder über FragDenStaat"
   hr: "Putem Imamo pravo znati"
