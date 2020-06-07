@@ -1,55 +1,185 @@
 ---
 layout: default
-title: All
+title: Otvoreni proračuni države, županija, gradova i općina
 script_include: home
+lang: hr
 ---
 {% include relative-baseurl.html %}
 
 <div class="main-content">
-  <div class="container message-container">
-    <div class="row welcome">
-      <div class="col-xs-12 col-md-12">
-        <div class="front-message">
-          Otvoreni proračun je transparentan pregled prihoda i rashoda gradova, općina i županija.
-          <!-- TOO LONG: Pružamo jednostavan i transparentan pristup upravi pa sada zainteresirana javnost ima ukupni pregled financija u prihode i rashode gradova, općina, županija i države.-->
+    <div class="container message-container">
+      <div class="row welcome">
+        <div class="col-xs-12 col-md-12">
+          <div class="front-message">
+            {{ site.data.translations['indexLead'][page.lang] }}
+          </div>
         </div>
       </div>
     </div>
-  </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-md-12">
-        {% assign landcities = site.haushalte %}
-        {% for bundes in site.data.admindivisiontop %}
-        <h1>{{ bundes.name }}</h1>
-          {% for land in landcities %}
-            {% if land.config and land.state == bundes.code %}
-            {% unless land.url contains 'edit' or land.url contains 'embed' %}
-            <a href="{{ land.url }}">{{ land.name }}</a>
+    <div id="map-selector" class="container gray">
+      <div class="row map">
+        <div class="col-xs-12 col-md-7">
+          <p class="claim">
+            {{ site.data.translations['indexExplore'][page.lang] }}
+          </p>
+          <div id="default-welcome">
             <p>
-            {% endunless %}
-            {% endif %}
-          {% endfor %}
-          <p>
-        {% endfor %}
+            <b>{{ site.data.translations['indexChoose'][page.lang] }}:</b>
+            <p>
+            <select id="selectState" class="select-state">
+              <option value="" disabled selected>{{ site.data.translations['indexSelect'][page.lang] }}</option>
+              {% for admindivisiontop in site.data.admindivisiontop %}
+              <option value="{{ admindivisiontop['code'] }}">{{ admindivisiontop['name'] }}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div id="listing"></div>
+        </div>
+        <div class="col-xs-12 col-md-5">
+          {% if site.showMap %}
+          <div id="map"></div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div id="cities" class="container">
+      {% include country.html %}
+    </div>
+    <div id="search-results" class="container" style="display: none">
+      <div class="row">
+        <div class="col col-xs-12 col-md-12">
+          <div class="close-search">{{ site.data.translations['indexBack'][page.lang] }} <img src="/static/img/mini-map.png"></div>
+          <h1>{{ site.data.translations['indexMissing'][page.lang] }} <span class="city-name" id="search-city-name"></span></h1>
+
+          <hr>
+
+          {% capture getcity %}
+            <span class="city-name"></span>
+          {% endcapture %}
+
+          {% assign investigate_byline = site.data.translations['indexInvestigate'][page.lang] %}
+          <h2 id="search-info">
+            {{ investigate_byline | replace: "[city_name]", getcity }}
+          </h2>
+
+          <div class="fragdenstaat">
+            <h3>{{ site.data.translations['indexFoiaAction'][page.lang] }}</h3>
+
+            <p>
+              {{ site.data.translations['indexFoiaIntro'][page.lang] }}
+            </p>
+            <a class="bluegreen-button" href="{{ site.foia_url }}">{{ site.data.translations['indexFoiaRequestLink'][page.lang] }}<i class="fa fa-long-arrow-right"></i></a>
+          </div>
+
+          <h1>{{ site.data.translations['indexContributeIntro'][page.lang] }}</h1>
+
+          <ul>
+            <li>{{ site.data.translations['indexContributeFirst'][page.lang] }}</li>
+            <li>{{ site.data.translations['indexContributeSecond'][page.lang] }}</li>
+            <li>{{ site.data.translations['indexContributeThird'][page.lang] }}</li>
+          </ul>
+
         </div>
       </div>
     </div>
     <div class="container admindivisiontop-bottom-karte">
       <div class="row">
         <div class="col col-xs-12 col-md-12">
-          <h1>Administrativne jedinice</h1>
+          <h1>{{ site.data.translations['indexMasterBudgetIntro'][page.lang] }}</h1>
           <p>
           <div class="treemap-big-preview">
             <p>
-            Jedinice područne (regionalne) samouprave su županije kao najviša razina administrativne podjele u Rebublici Hrvatskoj, a pod njima se nalaze jedinice lokalne samouprave kao općine i gradovi.
+            {{ site.data.translations['indexMasterBudgetDescription'][page.lang] }}
             </p>
-          <!-- <a class="bluegreen-button" href="/haushalt/bund">
-            pogledaj državni proračun
-          </a> -->
+          {% if site.data.translations['indexMasterBudgetButton'][lang] %}
+          <a class="bluegreen-button" href="/haushalt/bund">
+            {{ site.data.translations['indexMasterBudgetButton'][page.lang] }}
+          </a>
+          {% endif %}
           </div>
           </p>
         </div>
       </div>
     </div>
+    </div>
 </div>
+<div class="clearfix"></div>
+
+<script id="listing-template" type="text/x-handlebars-template">{% raw %}
+  {% capture getstate %}
+    <strong>{{state.name}}</strong>
+  {% endcapture %}
+  {{#if has_sites}}
+    {% assign existing_byline = site.data.translations['indexDisplayExisting'][page.lang] %}
+    <p>
+      {{ existing_byline | replace: "[state_name]", getstate }}:</p>
+    <ul>
+      {{#each sites}}
+        <li><strong><a href="{{url}}">{{name}}</a></strong>: {{tagline}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+  {{#if no_sites}}
+    {% assign nonexisting_byline = site.data.translations['indexDisplayNonexisting'][page.lang] %}
+    <p>
+      {{ nonexisting_byline | replace: "[state_name]", getstate }}
+    </p>
+  {{/if}}
+  <p>
+    <strong>{{ site.data.translations['indexDisplayUnavailable'][page.lang] }}</strong>
+    <a href="{{ relative-baseurl }}page/mitmachen.html">{{ translate.index.participate.join }}</a>{{ translate.index.participate.make_open }}
+  </p>
+{% endraw %}</script>
+
+<script id="city-template" type="text/x-handlebars-template">{% raw %}
+  <p><strong><a href="{{city.url}}">{{city.name}}</a></strong></p>
+  <p>{{city.tagline}}</p>
+  <p>
+    <strong>{{ translate.index.display.unavailable }}</strong>
+    <a href="{{ relative-baseurl }}page/mitmachen.html">{{ site.data.translations['indexParticipateJoin'][page.lang] }}</a>{{ site.data.translations['indexParticipateMakeOpen'][page.lang] }}
+  </p>
+{% endraw %}</script>
+
+
+<!--
+<hr>
+<div class="row dataset-listing">
+  <div class="col-xs-12 col-md-4">
+    <h2 id="laender">Länderhaushalte</h2>
+    <p>
+      Die Haushalte der Länder umfassen Ausgaben für
+      Dienste wie Polizei und Bildung.
+    </p>
+  </div>
+  <div class="col-xs-12 col-md-8">
+    <div class="row">
+    {% for haushalt in site.budget %}{% if haushalt.level == 'land' and haushalt.skip != true and haushalt.layout != "embed" %}
+      <div class="col-xs-12 col-md-6">
+        <h3><a href="{{ relative-baseurl }}haushalt/{{haushalt.slug}}/">{{haushalt.name}}</a></h3>
+        <p>{{haushalt.tagline}}</p>
+      </div>
+    {% endif %}{% endfor %}
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="row dataset-listing">
+  <div class="col-xs-12 col-md-4">
+    <h2 id="kommunen">Kommunalhaushalte</h2>
+    <p>
+      Haushalte von Bezirken, Kommunen und Kreisen.
+    </p>
+  </div>
+  <div class="col-xs-12 col-md-8">
+    <div class="row">
+    {% for haushalt in site.budget %}{% if haushalt.level != 'land' and haushalt.level != 'bund' and haushalt.skip != true and haushalt.layout != "embed" %}
+      <div class="col-xs-12 col-md-6">
+        <h3><a href="{{ relative-baseurl }}haushalt/{{haushalt.slug}}/">{{haushalt.name}}</a></h3>
+        <p>{{haushalt.tagline}}</p>
+      </div>
+    {% endif %}{% endfor %}
+    </div>
+  </div>
+</div>
+-->

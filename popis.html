@@ -1,0 +1,55 @@
+---
+layout: default
+title: All
+script_include: home
+---
+{% include relative-baseurl.html %}
+
+<div class="main-content">
+  <div class="container message-container">
+    <div class="row welcome">
+      <div class="col-xs-12 col-md-12">
+        <div class="front-message">
+          Otvoreni proračun je transparentan pregled prihoda i rashoda gradova, općina i županija.
+          <!-- TOO LONG: Pružamo jednostavan i transparentan pristup upravi pa sada zainteresirana javnost ima ukupni pregled financija u prihode i rashode gradova, općina, županija i države.-->
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+        {% assign landcities = site.haushalte %}
+        {% for bundes in site.data.admindivisiontop %}
+        <h1>{{ bundes.name }}</h1>
+          {% for land in landcities %}
+            {% if land.config and land.state == bundes.code %}
+            {% unless land.url contains 'edit' or land.url contains 'embed' %}
+            <a href="{{ land.url }}">{{ land.name }}</a>
+            <p>
+            {% endunless %}
+            {% endif %}
+          {% endfor %}
+          <p>
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="container admindivisiontop-bottom-karte">
+      <div class="row">
+        <div class="col col-xs-12 col-md-12">
+          <h1>Administrativne jedinice</h1>
+          <p>
+          <div class="treemap-big-preview">
+            <p>
+            Jedinice područne (regionalne) samouprave su županije kao najviša razina administrativne podjele u Rebublici Hrvatskoj, a pod njima se nalaze jedinice lokalne samouprave kao općine i gradovi.
+            </p>
+          <!-- <a class="bluegreen-button" href="/haushalt/bund">
+            pogledaj državni proračun
+          </a> -->
+          </div>
+          </p>
+        </div>
+      </div>
+    </div>
+</div>
