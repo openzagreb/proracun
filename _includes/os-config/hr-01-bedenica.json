@@ -126,5 +126,9 @@
         }
       ]
     }
-  }
+  },
+  "level": "kommune",
+  "state": "ZGZ",
+  "name": "Bedenica",
+  "text": "Lorem ipsum"
 }
