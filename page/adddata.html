@@ -15,7 +15,7 @@ lang: hr
 
 <div class="row help-pages">
   <div class="col-xs-12 col-md-12">
-    <h1>{{ site.data.translations['scriptBudgetTitle'][lang] }}</h1>
+    <h1>{{ site.data.translations['budgetEditTitle'][lang] }}</h1>
 
     {% capture getemail %}
       {{ site.email }}
@@ -24,7 +24,7 @@ lang: hr
     {% assign warning_byline = site.data.translations['addDataNonAutomatic'][lang] %}
 
     <div class="alert alert-danger">
-        <strong>{{ site.data.translations['addDataWarning'][lang] }}</strong> {{ investigate_byline | replace: "[contact_email]", getemail }}
+        <strong>{{ site.data.translations['addDataWarning'][lang] }}</strong> {{ warning_byline | replace: "[contact_email]", getemail }}
     </div>
 
     <p>
@@ -33,7 +33,7 @@ lang: hr
     <div id=app>
     </div>
     <br/>
-    <img style="margin: 0px; padding: 10px;" src="/static/img/ID.[lang].png">
+    <img style="margin: 0px; padding: 10px;" src="/static/img/ID.{{ lang }}.png">
     <br/>
     <p>
     {{ site.data.translations['addDataNeedMoreInfo'][lang] }} <a href="/contribute">{{ site.data.translations['addDataHelp'][lang] }}</a>.
