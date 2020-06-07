@@ -133,3 +133,21 @@ adminDivisionNoData:
 adminDivisionHelpUs:
   de: "Helfen Sie mit einen weiteren Haushalt zu veröffentlichen und fragen ihn bei der Behörde an!"
   hr: "Pomozi objavljivanjem još jednog proračuna tako da tražiš podatke o proračunu od tijela javne vlasti!"
+scriptBudgetTitle:
+  de: "Titel"
+  hr: "Naslov"
+scriptBudgetAmount:
+  de: "Betrag"
+  hr: "Iznos"
+scriptBudgetPercentage:
+  de: "Anteil"
+  hr: "Udio"
+scriptBudgetShowSmall:
+  de: "kleine Posten anzeigen"
+  hr: "prikaži male stavke"
+scriptBudgetHideSmall:
+  de: "kleine Posten verstecken"
+  hr: "sakrij male stavke"
+scriptBudgetAll:
+  de: "Alle"
+  hr: "Sve"
