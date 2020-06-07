@@ -120,16 +120,16 @@ adminDivisionGoToVisualization:
   hr: "idi na vizualizaciju"
 adminDivisionSubdivisionStats:
   de: "[division_name] hat [subdivision_number] Kommunen."
-  hr: ""
+  hr: "[division_name] ima [subdivision_number] jedinica lokalne samouprave."
 adminDivisionNoSubdivisionData:
   de: "Wir haben erst einen Haushalt."
-  hr: ""
+  hr: "Imamo djelomične podatke."
 adminDivisionSubdivisionAvailable:
   de: "Wir haben aber erst [city_number] Haushalte."
-  hr: ""
+  hr: "Ali imamo samo proračune za [city_number] gradova."
 adminDivisionNoData:
   de: "Wir haben noch keine Haushalte."
-  hr: ""
+  hr: "Još nemamo proračuna."
 adminDivisionHelpUs:
   de: "Helfen Sie mit einen weiteren Haushalt zu veröffentlichen und fragen ihn bei der Behörde an!"
-  hr: ""
+  hr: "Pomozi objavljivanjem još jednog proračuna tako da tražiš podatke o proračunu od tijela javne vlasti!"

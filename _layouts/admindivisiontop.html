@@ -182,7 +182,7 @@ layout: city
             <div class="letter-col first col-xs-4 col-md-3">
           {% endif%}
           {% assign idx = city_number| minus: cs_size | plus: forloop.index0 %}
-          <p><a href="/haushalt/{{cities[idx].state}}/{{cities[idx].slug}}">{{ c }}</p>
+          <p><a href="/prikaz/{{cities[idx].state}}/{{cities[idx].slug}}">{{ c }}</p>
         {% endfor %}
           </div>
         </div>
