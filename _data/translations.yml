@@ -151,3 +151,21 @@ scriptBudgetHideSmall:
 scriptBudgetAll:
   de: "Alle"
   hr: "Sve"
+budgetEditTitle:
+  de: "Datensatz visualisieren"
+  hr: "Vizualiziraj proračunske podatke"
+budgetEditIntro:
+  de: "Wenn Sie Ihren Datensatz bei OpenSpending hochgeladen haben, können Sie ihn an dieser Stelle visualisieren."
+  hr: "Kada preneseš svoj zapis proračunskih podataka na OpenSpending, ovdje ga možeš vizualizirati."
+addDataWarning:
+  de: "Achtung!"
+  hr: "Upozorenje!"
+addDataNonAutomatic:
+  de: "Leider ist die Funktionalität „Datensatz hinzufügen“ momentan kaputt. Bitte laden Sie stattdessen die Konfiguration herunter und schicken Sie sie per E-Mail an info@offenerhaushalt.de zusammen mit Name und Beschreibung Ihres Haushalts."
+  hr: "Nažalost, trenutno ne radi automatska funkcionalnost "Dodaj zapis". Umjesto toga preuzmi konfiguraciju i pošalji je e-poštom na adresu {{ site.email }} zajedno s nazivom i opisom proračuna."
+addDataNeedMoreInfo:
+  de: "Falls das zu schnell für Sie war, lesen Sie die"
+  hr: "Ako ti je to bilo prebrzo, pročitaj"
+addDataHelp:
+  de: "Hilfestellung"
+  hr: "pomoć"

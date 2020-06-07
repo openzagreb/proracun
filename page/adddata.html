@@ -1,29 +1,29 @@
 ---
 layout: default
-title: Datensatz hinzufügen
+title: Dodaj zapis
 script_include: hinzufuegen
 permalink: /add/
+lang: hr
 ---
 {% include relative-baseurl.html %}
 
 <div class="row help-pages">
   <div class="col-xs-12 col-md-12">
-    <h1>Datensatz visualisieren</h1>
+    <h1>{{ site.data.translations['scriptBudgetTitle'][lang] }}</h1>
     <div class="alert alert-danger">
-        <strong>Achtung!</strong> Leider ist die Funktionalität „Datensatz hinzufügen“ momentan kaputt. Bitte laden Sie stattdessen die Konfiguration herunter und schicken Sie sie per E-Mail an info@offenerhaushalt.de zusammen mit Name und Beschreibung Ihres Haushalts.
+        <strong>{{ site.data.translations['addDataWarning'][lang] }}</strong> {{ site.data.translations['addDataNonAutomatic'][lang] }}
     </div>
 
     <p>
-    Wenn Sie Ihren Datensatz bei OpenSpending hochgeladen haben, können Sie ihn an dieser Stelle visualisieren.
+    {{ site.data.translations['budgetEditIntro'][lang] }}
     </p>
     <div id=app>
     </div>
     <br/>
-    <img style="margin: 0px; padding: 10px;" src="/static/img/ID.png">
+    <img style="margin: 0px; padding: 10px;" src="/static/img/ID.[lang].png">
     <br/>
     <p>
-    Falls das zu schnell für Sie war, lesen Sie
-    die <a href="/hilfestellung">Hilfestellung</a>.
+    {{ site.data.translations['addDataNeedMoreInfo'][lang] }} <a href="/contribute">{{ site.data.translations['addDataHelp'][lang] }}</a>.
     </p>
   </div>
 </div>
