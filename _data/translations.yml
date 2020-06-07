@@ -161,8 +161,8 @@ addDataWarning:
   de: "Achtung!"
   hr: "Upozorenje!"
 addDataNonAutomatic:
-  de: "Leider ist die Funktionalität „Datensatz hinzufügen“ momentan kaputt. Bitte laden Sie stattdessen die Konfiguration herunter und schicken Sie sie per E-Mail an [contact_email] zusammen mit Name und Beschreibung Ihres Haushalts."
-  hr: "Nažalost, trenutno ne radi automatska funkcionalnost "Dodaj zapis". Umjesto toga preuzmi konfiguraciju i pošalji je e-poštom na adresu [contact_email] zajedno s nazivom i opisom proračuna."
+  de: "Leider ist die Funktionalität 'Datensatz hinzufügen' momentan kaputt. Bitte laden Sie stattdessen die Konfiguration herunter und schicken Sie sie per E-Mail an [contact_email] zusammen mit Name und Beschreibung Ihres Haushalts."
+  hr: "Nažalost, trenutno ne radi automatska funkcionalnost 'Dodaj zapis.' Umjesto toga preuzmi konfiguraciju i pošalji je e-poštom na adresu [contact_email] zajedno s nazivom i opisom proračuna."
 addDataNeedMoreInfo:
   de: "Falls das zu schnell für Sie war, lesen Sie die"
   hr: "Ako ti je to bilo prebrzo, pročitaj"
