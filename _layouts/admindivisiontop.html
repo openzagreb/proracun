@@ -96,7 +96,7 @@ layout: city
      {% if land_size > 0 %}
         {% for l in land %}
           <div class="visualisierung">
-            <a href="{{ l.url }}">  zur Visualisierung <i class="fa fa-long-arrow-right"></i></a>
+            <a href="{{ l.url }}">  {{ site.data.translations['adminDivisionGoToVisualization'][lang] }} <i class="fa fa-long-arrow-right"></i></a>
           </div>
         {% endfor %}
       {% endif %}
@@ -114,22 +114,32 @@ layout: city
         <h2>{{ c.name }}</h2>
       </div>
       <div class="visualisierung">
-        <a href="{{ c.url }}"> zur Visualisierung <i class="fa fa-long-arrow-right"></i></a>
+        <a href="{{ c.url }}"> {{ site.data.translations['adminDivisionGoToVisualization'][lang] }} <i class="fa fa-long-arrow-right"></i></a>
       </div>
     </div>
     {% endif %}
     {% endfor %}
   </div>
 </div>
-{% if page.code != 'BE' %}
+{% if page.code != 'BE' %} <!-- proracun.org does not use "BE", could be removed later -->
 <div class="row cities-count">
   <div class="container">
     <div class="row">
       <div class="cities-message col-xs-12 col-md-12">
         {% assign count = site.haushalt | where: "state", page.code | size %}
         {% assign kommunen_nummer = site.data.kommunen[page.code] | size %}
-        <h1>{{ page.land }} hat {{ kommunen_nummer }} Kommunen. {% if cities_size > 0 %}{% if cities_size == 1 %}Wir haben erst einen Haushalt. {% else %}Wir haben aber erst {{ cities_size }} Haushalte.{% endif %}{% else %}Wir haben noch keine Haushalte.{% endif %}</h1>
-        <p>Helfen Sie mit einen weiteren Haushalt zu veröffentlichen und fragen ihn bei der Behörde an!</p>
+
+        {% capture getadmindivision %}
+          {{ page.land }}
+        {% endcapture %}
+
+        {% assign statistics_one_byline = site.data.translations['adminDivisionSubdivisionStats'][lang] %}
+        {% assign statistics_two_byline = site.data.translations['adminDivisionNoSubdivisionData'][lang] %}
+        {% assign statistics_three_byline = site.data.translations['adminDivisionSubdivisionAvailable'][lang] %}
+        {% assign statistics_four_byline = site.data.translations['adminDivisionNoData'][lang] %}
+
+        <h1>{{ statistics_one_byline | replace: "[division_name]", page.land | replace: "[subdivision_number]", kommunen_nummer }} {% if cities_size > 0 %}{% if cities_size == 1 %}{{ statistics_two_byline }} {% else %}{{ statistics_three_byline | replace: "[city_number]", city_size }}{% endif %}{% else %}{{ statistics_four_byline }}{% endif %}</h1>
+        <p>{{ site.data.translations['adminDivisionHelpUs'][lang] }}</p>
       </div>
    </div>
    <div class="row">

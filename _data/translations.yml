@@ -115,3 +115,21 @@ budgetIntro:
 adminDivisionSearchPlaceholder:
   de: "Ort eingeben"
   hr: "Unesi lokaciju"
+adminDivisionGoToVisualization:
+  de: "zur Visualisierung"
+  hr: "idi na vizualizaciju"
+adminDivisionSubdivisionStats:
+  de: "[division_name] hat [subdivision_number] Kommunen."
+  hr: ""
+adminDivisionNoSubdivisionData:
+  de: "Wir haben erst einen Haushalt."
+  hr: ""
+adminDivisionSubdivisionAvailable:
+  de: "Wir haben aber erst [city_number] Haushalte."
+  hr: ""
+adminDivisionNoData:
+  de: "Wir haben noch keine Haushalte."
+  hr: ""
+adminDivisionHelpUs:
+  de: "Helfen Sie mit einen weiteren Haushalt zu veröffentlichen und fragen ihn bei der Behörde an!"
+  hr: ""
