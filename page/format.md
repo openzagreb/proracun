@@ -11,10 +11,40 @@ Informacija o glavnoj strukturi se može rekonstruirati iz izgleda - dok je, pri
 Ovo su dobri primjeri formata:
 
 <table class="table table-condensed">
-<tr><th>Naziv</th><th>Ocjena</th><th>Format</th><th>Opis</tr>
-<tr><td>Zarezom dijeljenje vrijednosti</td><td>***</td><td>.csv</td><td>Einfaches Textformat, gut geeignet.</td></tr>
-<tr><td>Excel tablica</td><td>**</td><td>.xls</td><td>Microsoft Excel (2000-2003) Format, ohne Makros und mit wenigen Blättern.</td></tr>
-<tr><td>OpenOffice tablica</td><td>*</td><td>.ods</td><td>Open Office-Daten, ähnlich Excel</td></tr>
-<tr><td>XML podaci</td><td>****</td><td>.xml</td></td><td>Ein eigenes, expressives XML-Format (vgl. FTS)</td></tr>
-<tr><td>JavaScript Object Notation</td><td>****</td><td>.json</td><td>JSON-Daten mit aussagekräftigen Keys und guter Verschachtelung.</td></tr>
+<tr>
+<th>Naziv</th>
+<th>Ocjena</th>
+<th>Format</th>
+<th>Opis</th>
+</tr>
+<tr>
+<td>Zarezom dijeljenje vrijednosti</td>
+<td>***</td>
+<td>.csv</td>
+<td>Einfaches Textformat, gut geeignet.</td>
+</tr>
+<tr>
+<td>Excel tablica</td>
+<td>**</td>
+<td>.xls</td>
+<td>Microsoft Excel (2000-2003) Format, ohne Makros und mit wenigen Blättern.</td>
+</tr>
+<tr>
+<td>OpenOffice tablica</td>
+<td>*</td>
+<td>.ods</td>
+<td>Open Office-Daten, ähnlich Excel</td>
+</tr>
+<tr>
+<td>XML podaci</td>
+<td>****</td>
+<td>.xml</td>
+<td>Ein eigenes, expressives XML-Format (vgl. FTS)</td>
+</tr>
+<tr>
+<td>JavaScript Object Notation</td>
+<td>****</td>
+<td>.json</td>
+<td>JSON-Daten mit aussagekräftigen Keys und guter Verschachtelung.</td>
+</tr>
 </table>
