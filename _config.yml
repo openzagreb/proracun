@@ -36,11 +36,13 @@ analytics:
   enable: false
   google_analytics:
     enable: false
-    code: ""
+    code: ''
   piwik:
     enable: false
-    tracking_pixel_uri: "/piwik.okfn.de/piwik.php?idsite=4"
-    link_tracking: "//traffic.okfn.de/"
+    # example: tracking_pixel_uri: "/piwik.okfn.de/piwik.php?idsite=4"
+    tracking_pixel_uri: ''
+    # example: link_tracking: "//traffic.okfn.de/"
+    link_tracking:
 
 # Social Netorks
 twitter_username: openzagreb
