@@ -13,20 +13,20 @@ $(function() {
   var $stateSelect = $('#selectState')
 
   $stateSelect.change(function (event) {
-    var admindivisiontop = $(this).val()
+    var bundesland = $(this).val()
 
-    if (admindivisiontop !== selectedState) {
+    if (bundesland !== selectedState) {
       var evt = new MouseEvent("click")
-      var mapPoly = d3.select('.subunit.' + admindivisiontop).node()
-      selectStateOnMap(admindivisiontop, mapPoly, true)
+      var mapPoly = d3.select('.subunit.' + bundesland).node()
+      selectStateOnMap(bundesland, mapPoly, true)
     }
 
-    if (!admindivisiontop) {
-      admindivisiontop = ''
+    if (!bundesland) {
+      bundesland = ''
     }
-    $('#cities').load('/admindivisiontop/' + admindivisiontop,
+    $('#cities').load('/bundesland/' + bundesland,
       function () {
-        if (admindivisiontop !== '')
+        if (bundesland !== '')
           $('#map-selector').slideUp(400);
       }
     )
