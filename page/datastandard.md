@@ -1,7 +1,15 @@
 ---
 title: Datenstandard
 layout: page
+lang: hr
 ---
+
+{% if page.lang %}
+  {% assign lang = page.lang %}
+{% else %}
+  {% assign lang = site.default_lang %}
+{% endif %}
+
 Zur Umsetzung von OffenerHaushalt sind maschinenlesbare Haushaltsdaten notwendig. Gemeint ist damit, dass die Daten in der Form bereitgestellt werden sollen, in der ihre intendierte Struktur möglichst weitgehend nachvollzogen werden kann. Während es sich zum Beispiel beim PDF-Format zwar um digitale Daten handelt, sind die enthaltenen Informationen für die Ausgabe durch Bildschirme und Drucker optimiert - Informationen zur eigentlichen Struktur können jedoch nicht ausgelesen werden.
 
 Um Haushaltspläne bei Offenerhaushalt.de visualisieren zu können, müssen diese in maschinenlesbarer Form vorliegen. Im Idealfall ist das ein CSV Format oder eine Datei, die sich leicht in ein CSV konvertieren lässt (Excel Datei).
@@ -13,7 +21,7 @@ Zur Orientierung und Kommunikation mit zuständigen Verwaltungsmitarbeitern find
 Für den Upload verwenden wir das [long Format](https://de.wikipedia.org/wiki/Wide-Format_und_Long-Format), dieses stellt jeden einzelnen Posten im Haushalt mit je einem einzelnen Betrag als eine Zeile in einer CSV Datei dar. Dies ist auch in der folgenden Abbildung erkennen.
 
 <p style= "overflow: scroll;">
-<img src="/static/img/example_table.png" alt="Bild Datenstandard">
+<img src="/static/img/example_table.{{ lang}}.png" alt="data standard">
 </p>
 
 Gerne wollen wir gemeinsam mit kommunalen Verwaltungen einen Standard für Haushaltsdaten in Deutschland entwickeln. Sie können dafür mit uns über unsere [Mailingliste](https://lists.okfn.org/mailman/listinfo/offener-haushalt) in den Austausch treten.

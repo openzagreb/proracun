@@ -1,9 +1,9 @@
 ---
-title: Spenden
+title: Donacije
 ---
 
-Unsere Arbeit ist unabhängig, überparteilich, interdisziplinär und nicht-kommerziell. Fast alle unserer Projekte leben vom ehrenamtlichen Engagement ihrer Unterstützer. Doch auch ehrenamtliches Engagement kostet Geld. Deshalb freuen wir uns über jede Spende, damit wir den Menschen, die sich unter dem Dach der Open Knowledge Foundation Deutschland für freies Wissen, offene Daten und Beteiligung einsetzen, weiterhin eine gute Infrastruktur bieten können. Gern nehmen wir auch projektbezogene Sachspenden an.
+Naš je rad neovisan, nestranački, interdisciplinarni i nekomercijalni. Svi naši projekti uspijevaju radi volonterskog rada dobrih ljudi. Ali nije sve besplatno. Stoga smo sretni za svaku vašu donaciju kako bismo i dalje nudili dobru infrastrukturu ljudima koji podupiru otvoreni kod, otvorene podatke i sudjeluju pod okriljem Code for Croatia i lokalnog ogranka Open Zagreb. Također ćemo vrlo rado prihvatiti donacije u naravi koje mogu pomoći našim projektima.
 
-## Unterstützung durch Spende
+## Kako poduprijeti ovaj projekt
 
-[Hier finden Sie Möglichkeiten uns mit einer Spende zu unterstützen](https://okfn.de/spenden/)
+[Kontaktirajte nas](impressum.html) ili uplatite vaš doprinos na žiro-račun Gonga (IBAN: HR3123600001101561882), uz napomenu "Donacija za Code for Croatia - projekt Otvoreni proračun".
