@@ -21,30 +21,30 @@ Ovo su dobri primjeri formata:
 <td>Zarezom dijeljenje vrijednosti</td>
 <td>***</td>
 <td>.csv</td>
-<td>Einfaches Textformat, gut geeignet.</td>
+<td>Jednostavan tekstualni format, dobro prilagođen.</td>
 </tr>
 <tr>
 <td>Excel tablica</td>
 <td>**</td>
 <td>.xls</td>
-<td>Microsoft Excel (2000-2003) Format, ohne Makros und mit wenigen Blättern.</td>
+<td>Microsoft Excel (2000-2003) format, bez makronaredbi i s nekoliko listova.</td>
 </tr>
 <tr>
 <td>OpenOffice tablica</td>
 <td>*</td>
 <td>.ods</td>
-<td>Open Office-Daten, ähnlich Excel</td>
+<td>Open Office podaci, slično kao i Excel</td>
 </tr>
 <tr>
 <td>XML podaci</td>
 <td>****</td>
 <td>.xml</td>
-<td>Ein eigenes, expressives XML-Format (vgl. FTS)</td>
+<td>Ekspresivni XML format (vidi FTS)</td>
 </tr>
 <tr>
 <td>JavaScript Object Notation</td>
 <td>****</td>
 <td>.json</td>
-<td>JSON-Daten mit aussagekräftigen Keys und guter Verschachtelung.</td>
+<td>JSON podaci sa smislenim ključnim vrijednostima, indeksima i dobrim gniježđenjem podataka.</td>
 </tr>
 </table>
