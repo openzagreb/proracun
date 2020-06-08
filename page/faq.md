@@ -84,8 +84,8 @@ Dakle, proračunski izdaci se dijele na:
 * kapitalne izdatke
 * posudbe umanjene za otplate, koje se pak mogu podijeliti na:
 
-  -− dane državne zajmove i udio u glavnici, te
-  -− otplatu (povrat) zajmova državi.
+  - dane državne zajmove i udio u glavnici, te
+  - otplatu (povrat) zajmova državi.
 
 ## Što je klasifikacija proračuna?
 
