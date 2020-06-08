@@ -6,4 +6,4 @@ Naš je rad neovisan, nestranački, interdisciplinarni i nekomercijalni. Svi na�
 
 ## Kako poduprijeti ovaj projekt
 
-[Kontaktirajte nas](impressum.html) ili uplatite vaš doprinos na žiro-račun Gonga (IBAN: HR3123600001101561882), uz napomenu "Donacija za Code for Croatia - projekt Otvoreni proračun".
+[Kontaktirajte nas](/page/impressum.html) ili uplatite vaš doprinos na žiro-račun Gonga (IBAN: HR3123600001101561882), uz napomenu "Donacija za Code for Croatia - projekt Otvoreni proračun".

@@ -1,31 +1,30 @@
 ---
-title: Mitmachen
+title: Sudjeluj u Otvorenom proračunu
 layout: page
 ---
 
-OffenerHaushalt ist ein Community-Projekt der Open Knowledge Foundation Germany, das heißt die Arbeit wird zu großen Teilen von Freiwilligen erledigt. Daher sind wir auf Ihre Unterstützung angewiesen: entweder durch Ihre Mithilfe, oder durch [Spenden](https://offenerhaushalt.de/page/intro.html), die den Betrieb der Seite ermöglichen.
+{{ site.title }} je volonterski organizirani projekt, i sve je učinjeno od strane volontera. Mi se dakle moramo osloniti na vašu podršku bilo putem vašeg sudjelovanja, ili putem donacija, što omogućuje rad na projektu.
 
-## Wie kann ich mitmachen?
+## Kako se mogu pridružiti?
 
-Die Aufgaben sind vielfältig, es gibt sowohl inhaltliche, technische und politische Arbeit zu erledigen. Sie können Haushaltsdaten aus der Verwaltung besorgen, diese aufbereiten und hochladen, Erklärungen zu den Haushalten verfassen oder die Seite weiterentwicklen. 
+Poslovi na projektu {{ site.title }} su različiti, postoje i materijalni, tehnički i zagovarateljski rad. Neki od primjera:
 
-* **Datensammlung:** Treten Sie in Kontakt mit Ihrer Landes-, Kreis- oder Kommunalregierung (zum Beispiel über [FragdenStaat.de](https://fragdenstaat.de/) und bitten Sie um die Bereitstellung maschinenlesbarer Haushaltsdaten. Wichtig ist dabei, dass die Daten in einem Tabellenformat wie CSV oder Microsoft Excel vorliegen, und nicht als PDF-Dokument. 
+* **Prikupljanje podataka:** Stupite u kontakt s državom, svojom županijskom, općinskom ili gradskom vlasti i pitajte ih za pružanje javnih financijskih podataka u strojno čitljivom obliku. Važno je da su podaci u tabličnom obliku, kao što su CSV ili Microsoft Excel, a ne kao PDF dokument. Detaljne upute o formatu možete pronaći [ovdje](/page/format.html).
 
-* **Haushaltsdaten säubern:**
-Um unserer Struktur gerecht zu werden, müssen die Haushaltsdateien häufig noch angepasst werden. Dies lässt sich mit einführenden Programmierkenntnissen einfach erledigen. Detailierte Anweisungen zum Format finden Sie [hier](https://offenerhaushalt.de/hilfestellung/1/).
+* **Podijelite proračun:** {{ site.title }} pristupa javnim financijskim podacima na OpenSpending za prikazivanje hrvatskih javnih financija. Proračunski podaci trebali bi, dakle, prvenstveno biti prisutni na [međunarodnom portalu otvorenih financija](https://openspending.org).
 
-* **Haushaltdaten hochladen:** OffenerHaushalt greift auf eine [Datenbank](https://openspending.org/packager/) zu, um die Haushalte darzustellen. Dort müssen die Daten hochgeladen und entsprechend Ihrer [Struktur](https://offenerhaushalt.de/hilfestellung/3/) zugeordnet werden. 
- 
-* **Visualisierung und Analyse:** Sobald Sie einen Haushalt in der Datenbank bereitgestellt haben, können Sie diesen mit der zugehörigen [ID]() auf OffenerHaushalt.de hinzufügen. Sie können die Daten mit einer Skala versehen und bspw. die Zahlen pro Einwohner oder Erwerbstätigen Personen analysieren. Außerdem können Sie die Haushaltsdaten in einem Text erklären (unterhalb der Visualisierung). 
+Kao uvod u integraciji financijskih podataka u {{ site.title }} pogledajte [OpenSpending vodič](http://community.openspending.org/help/guide/en/). Nakon što ste unijeli proračun na OpenSpending, [obavijestite nas](/page/impressum.html).
 
-* **Weiterentwicklung:** Die Projektseite von OffenerHaushalt ist natürlich freie Software (MIT-lizenziert) und kann durch jeden [weiterentwickelt](https://github.com/okfde/offenerhaushalt.de) werden. Wir freuen uns über neue Funktionen, Analysemethoden oder Visualisierungsformen. Dabei lohnt auch der Blick in den [Issue Tracker](https://github.com/okfde/offenerhaushalt.de/issues).
+* **Vizualizacija i analiza:** Otvoreni proračun pruža veliku arhivu proračunskih podatka koji se mogu lako prikazati, tumačiti i uspoređivati u različitim oblicima. Bilo bi nam drago ako doprinesete uzbudljivoj povijesti otvorenih podataka kroz analizu ili vizualizaciju hrvatskih proračuna.
 
-## Spielregeln
+* **Razvoj:** stranica projekta Otvoreni proračun je, naravno, besplatan softver (pokriven MIT licencom) i može se dalje razvijati neovisno. Pozdravljamo nove mogućnosti, analizu i vizualizaciju oblika. Također možete pogledati [Issue tracker](https://github.com/{{ site.github_username }}/{{ site.github_repo }}/issues) za stavke gdje trebamo pomoć.
 
-Die folgenden Grundsätze sollten für die Teilnahme am Projekt OffenerHaushalt gelten:
+## Pravila igre
 
-* Wir **kommunizieren über die [Mailingliste](http://lists.okfn.org/mailman/listinfo/offener-haushalt)**. Alle Diskussionen, die nicht unbedingt privat sein müssen, sollten über die öffentliche Mailingliste erfolgen, um Dritten eine Teilnahme zu ermöglichen.
+Prilikom sudjelovanja u projektu {{ site.title }} trebalo bi se pridržavati sljedećih načela:
 
-* Wir sind **überparteilich**. Das Ziel des OffenenHaushalts ist es, politische Debatten zu unterstützen. Die parteipolitische Besetzung des Projektes an sich sollte vermieden werden.
+* **Komuniciramo [digitalno](#link-uskoro)**. Sve rasprave koje ne moraju nužno biti privatne, trebali bi se održati na javnoj mailing listi gdje će omogućiti i drugima da sudjeluju.
 
-* Wir fordern **Transparenz.** Obwohl für die Visualisierung von Haushaltsdaten keine Aufstellung auf der Ebene von Einzeltiteln erforderlich ist, fordern wir die Freigabe dieser Daten. Wir behalten uns vor, zu stark aggregierte Haushaltsdaten von der Seite zu entfernen.
+* **Mi nismo političari**. Cilj projekta je podržati političke rasprave no ne pridajemo bilo kakvu političku pristranost.
+
+* **Poziv za transparentnost.** Iako za vizualizaciju nisu potrebni vrlo deljanji financijski podaci, tražimo objavljivanje što detaljnijih financijskih podataka. Zadržavamo pravo ukloniti vrlo agregirane proračunske podatke sa stranice.

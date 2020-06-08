@@ -11,23 +11,27 @@
 # Site settings
 title: 'Otvoreni proračun'
 titledomain: "Proracun.org"
-
 email: openzagreb@codeforcroatia.org
-
 description: ''
-
 # the subpath of your site, e.g. /blog
 baseurl: ''
-
 # the base hostname & protocol for your site, e.g. http://example.com
 url: 'https://dev.proracun.org'
-
 # set the default language
 default_lang: hr
 # set the country code in ISO 3166-1 Alpha-2 code
 country_code: HR
-
 site_logo: 'ohh-logo.svg'
+footerGdprMessage: false
+showMap: false
+
+# Site owner
+owner:
+  title: "Open Zagreb"
+  url: "http://0.codeforcroatia.org/open-zagreb"
+  logo_svg: "okfn-logo-white.svg"
+
+# Analytics
 analytics:
   enable: false
   google_analytics:
@@ -37,12 +41,12 @@ analytics:
     enable: false
     tracking_pixel_uri: "/piwik.okfn.de/piwik.php?idsite=4"
     link_tracking: "//traffic.okfn.de/"
-footerGdprMessage: false
-showMap: false
 
+# Social Netorks
 twitter_username: openzagreb
 github_username: openzagreb
 github_repo: proracun
+foia_title: 'Imamo pravo znati'
 foia_url: 'https://imamopravoznati.org/'
 
 # Haushalte
