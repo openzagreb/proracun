@@ -1,5 +1,5 @@
 ---
-title: Pitanja i odgovori
+title: O financijskim podacima
 ---
 
 Na ovoj stranici su odgovorena neka pitanja o otvorenom proračunu. Molimo pogledajte prvo ove odgovore prije nego što nas kontaktirate s pitanjima.
