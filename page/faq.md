@@ -8,7 +8,7 @@ Odgovore na učestala pitanja o proračunu prenosimo iz Proračunskog vodiča za
 
 ## Što je {{ site.title}}?
 
-Jednostavan i pristupačan web portal, koji vizualizira državni proračun te županijske, općinske i gradske proračune. [Više...](/page/intro.md)
+Jednostavan i pristupačan web portal, koji vizualizira državni proračun te županijske, općinske i gradske proračune. [Više...](/page/intro.html)
 
 ## Što je proračun?
 
