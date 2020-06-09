@@ -4,6 +4,8 @@ state: ZGZ
 name: Bistra
 text:
 level: kommune
-date: '2020-06-06T00:00:00.000Z'
+config:
+  json: hr-01-bistra
+date: '2020-06-09T00:00:00.000Z'
 slug: bistra
 ---

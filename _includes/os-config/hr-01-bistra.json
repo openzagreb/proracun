@@ -1,5 +1,5 @@
 {
-  "datapackage": "6f9de6393bf997134dc1afbb45096b76:hr-01-bedenica",
+  "datapackage": "6f9de6393bf997134dc1afbb45096b76:hr-01-bistra",
   "hierarchies": [
     {
       "datapackageHierarchy": "functional_classification",
@@ -129,6 +129,6 @@
   },
   "level": "kommune",
   "state": "ZGZ",
-  "name": "Bedenica",
+  "name": "Bistra",
   "text": ""
 }
