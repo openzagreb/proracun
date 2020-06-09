@@ -22,6 +22,7 @@ layout: default
       {{ content }}
       </div>
     </div>
+    {% if site.showEmbed %}
     <div id="embed-treemap">
       <a id="embed-button" target="_blank">embed</a>
       <div id="embed-code" style="display: none">
@@ -36,6 +37,7 @@ layout: default
         </code></pre>
       </div>
     </div>
+    {% endif %}
   </div>
 </div>
 {% else %}
