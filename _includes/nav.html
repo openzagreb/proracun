@@ -14,10 +14,10 @@
       <a class="github" href="https://github.com/{{site.github_username}}/{{site.github_repo}}"><img style="width: 22px" src="/static/img/github.png"></a>
     </li>
     <li>
-      <a href="{{ relative-baseurl }}page/faq.html">{{ site.data.translations['navTopAbout'][lang] }}</a>
+      <a href="/page/faq.html">{{ site.data.translations['navTopAbout'][lang] }}</a>
     </li>
     <li class="spendet">
-      <a href="{{ relative-baseurl }}page/donate.html">{{ site.data.translations['navTopDonate'][lang] }}</a>
+      <a href="/page/donate.html">{{ site.data.translations['navTopDonate'][lang] }}</a>
     </li>
   </ul>
 </div>
@@ -45,12 +45,12 @@
       {% if page.url contains 'adddata' %}
       <li><i class="fa fa-plus"></i> {{ site.data.translations['navBarAdd'][lang] }}</li>
       {% else %}
-      <li><a href="{{ relative-baseurl }}add/"><i class="fa fa-plus"></i> {{ site.data.translations['navBarAdd'][lang] }}</a></li>
+      <li><a href="/add/"><i class="fa fa-plus"></i> {{ site.data.translations['navBarAdd'][lang] }}</a></li>
       {% endif %}
       {% if page.url contains 'contribute' %}
-      <li class="active"><a href="{{ relative-baseurl }}contribute/"><i class="fa fa-life-ring"></i> {{ site.data.translations['navBarHelp'][lang] }}</a></li>
+      <li class="active"><a href="/contribute/"><i class="fa fa-life-ring"></i> {{ site.data.translations['navBarHelp'][lang] }}</a></li>
       {% else %}
-      <li><a href="{{ relative-baseurl }}contribute/"><i class="fa fa-life-ring"></i> {{ site.data.translations['navBarHelp'][lang] }}</a></li>
+      <li><a href="/contribute/"><i class="fa fa-life-ring"></i> {{ site.data.translations['navBarHelp'][lang] }}</a></li>
       {% endif %}
     </ul>
 </nav>
