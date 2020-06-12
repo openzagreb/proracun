@@ -138,7 +138,7 @@ layout: city
         {% assign statistics_three_byline = site.data.translations['adminDivisionSubdivisionAvailable'][lang] %}
         {% assign statistics_four_byline = site.data.translations['adminDivisionNoData'][lang] %}
 
-        <h1>{{ statistics_one_byline | replace: "[division_name]", page.land | replace: "[subdivision_number]", kommunen_nummer }} {% if cities_size > 0 %}{% if cities_size == 1 %}{{ statistics_two_byline }} {% else %}{{ statistics_three_byline | replace: "[city_number]", city_size }}{% endif %}{% else %}{{ statistics_four_byline }}{% endif %}</h1>
+        <h1>{{ statistics_one_byline | replace: "[division_name]", page.land | replace: "[subdivision_number]", kommunen_nummer }} {% if cities_size > 0 %}{% if cities_size == 1 %}{{ statistics_two_byline }} {% else %}{{ statistics_three_byline | replace: "[city_number]", cities_size }}{% endif %}{% else %}{{ statistics_four_byline }}{% endif %}</h1>
         <p>{{ site.data.translations['adminDivisionHelpUs'][lang] }}</p>
       </div>
    </div>
