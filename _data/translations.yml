@@ -126,7 +126,7 @@ adminDivisionNoSubdivisionData:
   hr: "Imamo djelomične podatke."
 adminDivisionSubdivisionAvailable:
   de: "Wir haben aber erst [city_number] Haushalte."
-  hr: "Ali imamo samo proračune za [city_number] gradova."
+  hr: "Ali imamo proračune samo za [city_number] jedinica."
 adminDivisionNoData:
   de: "Wir haben noch keine Haushalte."
   hr: "Još nemamo proračuna."
