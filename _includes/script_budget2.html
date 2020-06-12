@@ -50,8 +50,6 @@
     {% include os-config/{{ page.config.template }}.json %}
   {% endcapture %}
 
-  {% assign configuration_transform = include os-config/{{ page.config.template }}.json %}
-
   var config = {{ configuration_json | replace: "$_openspending_id_$", page.config.osid }}
 
   var embedCode = $('#embed-code')
