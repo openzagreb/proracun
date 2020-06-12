@@ -127,8 +127,8 @@
       ]
     }
   },
-  "level": "kommune",
-  "state": "ZGZ",
-  "name": "Bedenica",
-  "text": ""
+  "level": "$_level_$",
+  "state": "$_state_$",
+  "name": "$_name_$",
+  "text": "$_text_$"
 }
