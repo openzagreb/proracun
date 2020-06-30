@@ -49,8 +49,8 @@ $(function() {
 
   d3.json(sites.baseurl + "static/img/hrv.topo.json", showMap);
 
-  function showMap(error, hr) {
-    var subunits = topojson.feature(hr, hr.objects.hrv);
+  function showMap(error, de) {
+    var subunits = topojson.feature(de, de.objects.hrv);
 
     var projection = d3.geo.mercator()
       .center([10.5, 51.35])
