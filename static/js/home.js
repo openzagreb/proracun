@@ -53,7 +53,7 @@ $(function() {
     var subunits = topojson.feature(de, de.objects.hrv);
 
     var projection = d3.geo.mercator()
-      .center([18.05, 44.42])
+      .center([15.85, 44.42])
       .scale(5000)
       .translate([width / 2, height / 2]);
 
