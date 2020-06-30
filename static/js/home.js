@@ -54,7 +54,7 @@ $(function() {
 
     var projection = d3.geo.mercator()
       .center([14.16, 44.42])
-      .scale(2000)
+      .scale(5000)
       .translate([width / 2, height / 2]);
 
 
