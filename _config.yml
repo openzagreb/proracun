@@ -21,10 +21,12 @@ url: 'https://dev.proracun.org'
 default_lang: hr
 # set the country code in ISO 3166-1 Alpha-2 code
 country_code: HR
+# set the country code in ISO 3166-1 Alpha-3 code
+country_code_3: hrv
 # site_logo: 'ohh-logo.svg'
 site_logo: 'otvoreni-proracun-logo.png'
 footerGdprMessage: false
-showMap: false
+showMap: true
 showEmbed: false
 
 # Site owner

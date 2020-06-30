@@ -47,10 +47,10 @@ $(function() {
     .attr("width", width)
     .attr("height", height);
 
-  d3.json(sites.baseurl + "static/img/deu.topo.json", showMap);
+  d3.json(sites.baseurl + "static/img/{{ site.country_code_3 }}.topo.json", showMap);
 
   function showMap(error, de) {
-    var subunits = topojson.feature(de, de.objects.deu);
+    var subunits = topojson.feature(de, de.objects.{{ site.country_code_3 }});
 
     var projection = d3.geo.mercator()
       .center([10.5, 51.35])
