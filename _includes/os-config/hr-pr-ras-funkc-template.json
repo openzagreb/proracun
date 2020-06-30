@@ -80,8 +80,8 @@
       "label_ref": "godina.godina",
       "ref": "godina",
       "default": true,
-      "defaultValue": "2010",
-      "defaultLabel": "2010",
+      "defaultValue": "2018",
+      "defaultLabel": "2018",
       "label": "Godina",
       "values": [
         {
